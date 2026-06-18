@@ -32,6 +32,7 @@ import {
   CheckCircle2,
   Send,
   Search,
+  Loader2,
   type LucideIcon as LucideIconType,
 } from 'lucide-react'
 
@@ -69,6 +70,7 @@ const map: Record<string, LucideIconType> = {
   CheckCircle2,
   Send,
   Search,
+  Loader2,
 }
 
 export function LucideIcon({ name, className }: { name: string; className?: string }) {
