@@ -1,9 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { Linkedin, Instagram, Youtube } from 'lucide-react'
 import { company, inquiryProductCategories, findUsOptions } from '@/lib/site-content'
 import { LucideIcon } from '@/components/cr/lucide-icon'
+import { LinkedinIcon, InstagramIcon, YoutubeIcon } from '@/components/cr/brand-icons'
 
 const field =
   'w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm text-ink outline-none focus:border-brand focus:ring-1 focus:ring-brand'
@@ -37,9 +37,9 @@ const contactCards = [
 ]
 
 const socials = [
-  { icon: Linkedin, label: 'LinkedIn', href: company.social.linkedin },
-  { icon: Instagram, label: 'Instagram', href: company.social.instagram },
-  { icon: Youtube, label: 'YouTube', href: company.social.youtube },
+  { icon: LinkedinIcon, label: 'LinkedIn', href: company.social.linkedin },
+  { icon: InstagramIcon, label: 'Instagram', href: company.social.instagram },
+  { icon: YoutubeIcon, label: 'YouTube', href: company.social.youtube },
 ]
 
 export function ContactView() {
