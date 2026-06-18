@@ -77,6 +77,7 @@ export const certifications = [
       ],
     ],
     downloadLabel: 'Download ISO 9001:2015 Certificate (PDF)',
+    file: '/certificates/iso-9001-certificate.pdf',
   },
   {
     id: 'iec',
@@ -97,6 +98,7 @@ export const certifications = [
       ['Signatory', 'Mohammad Anis Ansari, Director'],
     ],
     downloadLabel: 'Download IEC Certificate (PDF)',
+    file: '/certificates/iec-certificate.pdf',
   },
   {
     id: 'gst',
@@ -116,6 +118,7 @@ export const certifications = [
       ['Approving Officer', 'Rekha Arun Sitap, Superintendent, Mumbai'],
     ],
     downloadLabel: 'Download GST Certificate (PDF)',
+    file: '/certificates/gst-certificate.pdf',
   },
 ] as const
 
