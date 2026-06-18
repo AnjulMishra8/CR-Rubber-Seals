@@ -1,0 +1,5 @@
+[{id:"hydraulic",tag:"Precision Engineered",title:`Hydraulic Seals
+Built for Performance`,description:"ISO 9001:2015 certified precision seals designed for mission-critical hydraulic systems across industries.",badge:"AS9100D Standard",image:"/images/slide-1.png"},{id:"orings",tag:"Zero Flash Elastomers",title:`High-Performance
+O-Rings & Seals`,description:"FDA compliant, thermally resistant elastomers engineered for the most demanding sealing applications.",badge:"FDA Compliant",image:"/images/slide-2.png"},{id:"gaskets",tag:"Fabric Reinforced",title:`Custom Diaphragms
+& Gaskets`,description:"Fabric reinforced rubber diaphragms and gaskets for high-pressure sealing across automotive & industrial sectors.",badge:"High Pressure Rated",image:"/images/slide-3.png"},{id:"extruded",tag:"CNC Machined",title:`Extruded Profiles
+& Rubber Sleeves`,description:"Custom compound die-cut profiles and CNC machined seals — no tooling cost, no minimum order quantity.",badge:"No Tooling Cost",image:"/images/slide-4.png"}]
