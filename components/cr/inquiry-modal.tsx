@@ -1,7 +1,8 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { X } from 'lucide-react'
+import { useEffect, useState, useTransition } from 'react'
+import { X, Loader2 } from 'lucide-react'
+import { sendQuoteRequest } from '@/app/actions/send-enquiry'
 
 const materials = [
   'PU Formulation',
@@ -42,7 +43,23 @@ export function InquiryModal({
   onClose: () => void
 }) {
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [isPending, startTransition] = useTransition()
   const open = productName !== null
+
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setError(null)
+    const formData = new FormData(e.currentTarget)
+    startTransition(async () => {
+      const result = await sendQuoteRequest(formData)
+      if (result.ok) {
+        setSent(true)
+      } else {
+        setError(result.error ?? 'Something went wrong. Please try again.')
+      }
+    })
+  }
 
   useEffect(() => {
     if (!open) return
@@ -56,7 +73,10 @@ export function InquiryModal({
   }, [open, onClose])
 
   useEffect(() => {
-    if (!open) setSent(false)
+    if (!open) {
+      setSent(false)
+      setError(null)
+    }
   }, [open])
 
   if (!open) return null
@@ -109,13 +129,8 @@ export function InquiryModal({
             </button>
           </div>
         ) : (
-          <form
-            className="space-y-5 px-6 py-6"
-            onSubmit={(e) => {
-              e.preventDefault()
-              setSent(true)
-            }}
-          >
+          <form className="space-y-5 px-6 py-6" onSubmit={handleSubmit}>
+            <input type="hidden" name="product" value={productName ?? ''} />
             {productName && (
               <div className="rounded-md border border-brand/30 bg-accent px-4 py-3">
                 <p className="text-[10px] font-bold tracking-[0.15em] text-brand">
@@ -130,26 +145,26 @@ export function InquiryModal({
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
                 <label className={label}>YOUR FULL NAME*</label>
-                <input className={field} required />
+                <input name="name" className={field} required />
               </div>
               <div>
                 <label className={label}>CORPORATE EMAIL ADDRESS*</label>
-                <input type="email" className={field} required />
+                <input name="email" type="email" className={field} required />
               </div>
               <div>
                 <label className={label}>CONTACT NUMBER</label>
-                <input className={field} />
+                <input name="phone" className={field} />
               </div>
               <div>
                 <label className={label}>COMPANY / ORGANIZATION NAME*</label>
-                <input className={field} required />
+                <input name="company" className={field} required />
               </div>
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
                 <label className={label}>ELASTOMER MATERIAL SPECIFICATION</label>
-                <select className={field} defaultValue="">
+                <select name="material" className={field} defaultValue="">
                   <option value="" disabled>
                     Select material
                   </option>
@@ -160,7 +175,7 @@ export function InquiryModal({
               </div>
               <div>
                 <label className={label}>DESIRED HARDNESS DUROMETER</label>
-                <select className={field} defaultValue="">
+                <select name="hardness" className={field} defaultValue="">
                   <option value="" disabled>
                     Select hardness
                   </option>
@@ -171,11 +186,11 @@ export function InquiryModal({
               </div>
               <div>
                 <label className={label}>PURCHASE QUANTITY NEEDED (UNITS)*</label>
-                <input className={field} required />
+                <input name="quantity" className={field} required />
               </div>
               <div>
                 <label className={label}>MATERIAL CERTIFICATIONS REQUIRED</label>
-                <select className={field} defaultValue="">
+                <select name="certification" className={field} defaultValue="">
                   <option value="" disabled>
                     Select certification
                   </option>
@@ -190,15 +205,23 @@ export function InquiryModal({
               <label className={label}>
                 APPLICATION DETAILS & CRITICAL DIMENSIONS
               </label>
-              <textarea rows={4} className={field} />
+              <textarea name="details" rows={4} className={field} />
             </div>
+
+            {error && (
+              <p className="rounded-md border border-destructive/30 bg-destructive/5 px-4 py-3 text-sm font-medium text-destructive">
+                {error}
+              </p>
+            )}
 
             <div className="flex flex-col gap-3 sm:flex-row-reverse">
               <button
                 type="submit"
-                className="rounded-md bg-brand px-6 py-2.5 text-sm font-bold text-primary-foreground hover:bg-brand-dark"
+                disabled={isPending}
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-brand px-6 py-2.5 text-sm font-bold text-primary-foreground hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-70"
               >
-                Transmit Specifications
+                {isPending && <Loader2 className="size-4 animate-spin" />}
+                {isPending ? 'Transmitting…' : 'Transmit Specifications'}
               </button>
               <button
                 type="button"

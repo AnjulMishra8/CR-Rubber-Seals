@@ -1,9 +1,10 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useTransition } from 'react'
 import { company, inquiryProductCategories, findUsOptions } from '@/lib/site-content'
 import { LucideIcon } from '@/components/cr/lucide-icon'
 import { LinkedinIcon, InstagramIcon, YoutubeIcon } from '@/components/cr/brand-icons'
+import { sendContactEnquiry } from '@/app/actions/send-enquiry'
 
 const field =
   'w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm text-ink outline-none focus:border-brand focus:ring-1 focus:ring-brand'
@@ -44,6 +45,22 @@ const socials = [
 
 export function ContactView() {
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [isPending, startTransition] = useTransition()
+
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setError(null)
+    const formData = new FormData(e.currentTarget)
+    startTransition(async () => {
+      const result = await sendContactEnquiry(formData)
+      if (result.ok) {
+        setSent(true)
+      } else {
+        setError(result.error ?? 'Something went wrong. Please try again.')
+      }
+    })
+  }
 
   return (
     <div className="bg-background">
@@ -160,12 +177,7 @@ export function ContactView() {
                   </button>
                 </div>
               ) : (
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault()
-                    setSent(true)
-                  }}
-                >
+                <form onSubmit={handleSubmit}>
                   <h2 className="font-serif text-2xl font-bold text-ink">Send Us an Enquiry</h2>
                   <p className="mt-1 text-sm text-muted-foreground">
                     Fill out the form and our team will get back to you.
@@ -176,25 +188,25 @@ export function ContactView() {
                       <label className={label} htmlFor="name">
                         YOUR NAME *
                       </label>
-                      <input id="name" required className={field} placeholder="Your name" />
+                      <input id="name" name="name" required className={field} placeholder="Your name" />
                     </div>
                     <div>
                       <label className={label} htmlFor="phone">
                         PHONE NUMBER *
                       </label>
-                      <input id="phone" required className={field} placeholder="+91 ..." />
+                      <input id="phone" name="phone" required className={field} placeholder="+91 ..." />
                     </div>
                     <div>
                       <label className={label} htmlFor="company">
                         COMPANY NAME *
                       </label>
-                      <input id="company" required className={field} placeholder="Company name" />
+                      <input id="company" name="company" required className={field} placeholder="Company name" />
                     </div>
                     <div>
                       <label className={label} htmlFor="position">
                         POSITION / FIELD
                       </label>
-                      <input id="position" className={field} placeholder="Your role / field" />
+                      <input id="position" name="position" className={field} placeholder="Your role / field" />
                     </div>
                     <div>
                       <label className={label} htmlFor="email">
@@ -202,6 +214,7 @@ export function ContactView() {
                       </label>
                       <input
                         id="email"
+                        name="email"
                         type="email"
                         required
                         className={field}
@@ -212,7 +225,7 @@ export function ContactView() {
                       <label className={label} htmlFor="category">
                         PRODUCT / CATEGORY REQUIRED *
                       </label>
-                      <select id="category" required className={field} defaultValue="">
+                      <select id="category" name="category" required className={field} defaultValue="">
                         <option value="" disabled>
                           Select a category
                         </option>
@@ -229,6 +242,7 @@ export function ContactView() {
                       </label>
                       <textarea
                         id="message"
+                        name="message"
                         required
                         rows={5}
                         className={field}
@@ -239,7 +253,7 @@ export function ContactView() {
                       <label className={label} htmlFor="source">
                         HOW DID YOU FIND US?
                       </label>
-                      <select id="source" className={field} defaultValue="">
+                      <select id="source" name="source" className={field} defaultValue="">
                         <option value="" disabled>
                           Select an option (optional)
                         </option>
@@ -252,12 +266,19 @@ export function ContactView() {
                     </div>
                   </div>
 
+                  {error && (
+                    <p className="mt-5 rounded-md border border-destructive/30 bg-destructive/5 px-4 py-3 text-sm font-medium text-destructive">
+                      {error}
+                    </p>
+                  )}
+
                   <button
                     type="submit"
-                    className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-7 py-3 text-sm font-bold text-primary-foreground transition-colors hover:bg-brand-dark sm:w-auto"
+                    disabled={isPending}
+                    className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-7 py-3 text-sm font-bold text-primary-foreground transition-colors hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
                   >
-                    <LucideIcon name="Send" className="size-4" />
-                    Submit Enquiry
+                    <LucideIcon name={isPending ? 'Loader2' : 'Send'} className={`size-4 ${isPending ? 'animate-spin' : ''}`} />
+                    {isPending ? 'Sending…' : 'Submit Enquiry'}
                   </button>
                 </form>
               )}
