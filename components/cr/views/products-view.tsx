@@ -1,68 +1,43 @@
-"use client"
+'use client'
 
-import { useMemo, useState } from "react"
-import { products } from "@/lib/site-data"
-import { ProductCard } from "@/components/cr/product-card"
-import { InquiryModal } from "@/components/cr/inquiry-modal"
-import { LucideIcon } from "@/components/cr/lucide-icon"
+import { useMemo, useState } from 'react'
+import { products } from '@/lib/site-data'
+import { InquiryModal } from '@/components/cr/inquiry-modal'
+import { LucideIcon } from '@/components/cr/lucide-icon'
 
-const categories = ["All Products", ...Array.from(new Set(products.map((p) => p.category)))]
+const categories = ['All Products', ...Array.from(new Set(products.map((p) => p.category)))]
 
 export function ProductsView() {
-  const [active, setActive] = useState("All Products")
-  const [query, setQuery] = useState("")
+  const [active, setActive] = useState('All Products')
   const [inquiry, setInquiry] = useState<string | null>(null)
 
-  const filtered = useMemo(() => {
-    return products.filter((p) => {
-      const matchCat = active === "All Products" || p.category === active
-      const q = query.trim().toLowerCase()
-      const matchQuery =
-        !q ||
-        p.title.toLowerCase().includes(q) ||
-        p.tagline.toLowerCase().includes(q) ||
-        p.category.toLowerCase().includes(q)
-      return matchCat && matchQuery
-    })
-  }, [active, query])
+  const filtered = useMemo(
+    () => products.filter((p) => active === 'All Products' || p.category === active),
+    [active],
+  )
 
   return (
     <div className="bg-background">
       {/* Page header */}
       <section className="border-b border-border bg-ink text-white">
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pb-20 lg:pt-32">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">Our Catalogue</p>
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+            Our Products
+          </p>
           <h1 className="font-serif text-4xl font-bold tracking-tight text-balance sm:text-5xl">
-            Precision Sealing Solutions
+            Our Industrial Rubber Products
           </h1>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-slate-300">
-            Explore our complete range of hydraulic seals, oil seals, O-rings, polyurethane products, moulded rubber
-            components, and custom sealing kits — engineered to international standards.
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-slate-300">
+            CR Rubber and Seals manufactures premium quality industrial sealing products across
+            every major category — from standard hydraulic cylinder seals to custom TBM solutions up
+            to 7500mm diameter. All products are manufactured at our ISO 9001:2015 certified facility
+            at Pawane MIDC, Navi Mumbai using premium raw materials sourced from Austria, Taiwan,
+            Turkey, Italy and Singapore.
           </p>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        {/* Search */}
-        <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-          <div className="relative w-full lg:max-w-sm">
-            <LucideIcon
-              name="Search"
-              className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
-            />
-            <input
-              type="search"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search products..."
-              className="w-full rounded-lg border border-border bg-card py-2.5 pl-10 pr-4 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-            />
-          </div>
-          <p className="text-sm text-muted-foreground">
-            Showing <span className="font-semibold text-foreground">{filtered.length}</span> products
-          </p>
-        </div>
-
         {/* Category filters */}
         <div className="mb-10 flex flex-wrap gap-2">
           {categories.map((cat) => (
@@ -71,8 +46,8 @@ export function ProductsView() {
               onClick={() => setActive(cat)}
               className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
                 active === cat
-                  ? "border-primary bg-primary text-primary-foreground"
-                  : "border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground"
+                  ? 'border-primary bg-primary text-primary-foreground'
+                  : 'border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground'
               }`}
             >
               {cat}
@@ -80,19 +55,44 @@ export function ProductsView() {
           ))}
         </div>
 
-        {/* Grid */}
-        {filtered.length > 0 ? (
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((product) => (
-              <ProductCard key={product.id} product={product} onInquiry={setInquiry} />
-            ))}
-          </div>
-        ) : (
-          <div className="rounded-xl border border-dashed border-border py-20 text-center">
-            <p className="text-lg font-medium text-foreground">No products found</p>
-            <p className="mt-1 text-sm text-muted-foreground">Try a different search term or category.</p>
-          </div>
-        )}
+        {/* Detailed category sections */}
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+          {filtered.map((product) => (
+            <article
+              key={product.id}
+              className="flex flex-col rounded-2xl border border-border bg-card p-7 shadow-sm transition-shadow hover:shadow-lg"
+            >
+              <div className="flex items-center gap-3">
+                <span className="rounded-full bg-accent px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-brand">
+                  {product.category}
+                </span>
+              </div>
+              <h2 className="mt-4 font-serif text-2xl font-bold tracking-tight text-ink">
+                {product.title}
+              </h2>
+              <p className="mt-1 text-sm font-semibold italic text-slate-400">{product.tagline}</p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                {product.description}
+              </p>
+              <ul className="mt-5 flex-1 space-y-2.5">
+                {product.features.map((f) => (
+                  <li key={f} className="flex items-start gap-2.5 text-sm text-ink/80">
+                    <LucideIcon name="BadgeCheck" className="mt-0.5 size-4 shrink-0 text-brand" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <button
+                type="button"
+                onClick={() => setInquiry(product.title)}
+                className="mt-6 inline-flex items-center justify-center gap-2 rounded-full border border-border bg-muted px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:bg-brand/5 hover:text-brand"
+              >
+                Request a Quote
+                <LucideIcon name="ArrowRight" className="size-4" />
+              </button>
+            </article>
+          ))}
+        </div>
       </section>
 
       <InquiryModal productName={inquiry} onClose={() => setInquiry(null)} />

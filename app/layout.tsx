@@ -30,9 +30,10 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'CR Rubber & Seals Private Limited — Precision Sealing Solutions',
+  title:
+    'CR Rubber and Seals | Hydraulic Seals, O-Rings & Rubber Products — Navi Mumbai',
   description:
-    "India's trusted manufacturer, exporter and supplier of world-class seals and rubber products since 1995. ISO 9001:2015 certified. Serving 12+ industries with 100+ product types.",
+    'CR Rubber and Seals Pvt. Ltd. — ISO 9001:2015 certified manufacturer of hydraulic seals, O-rings, oil seals, PU products and custom rubber components. Sister company of Crown Rubber Works. Navi Mumbai. Export to Gulf, Singapore & Sri Lanka.',
   generator: 'v0.app',
   icons: {
     icon: '/favicon.ico',
