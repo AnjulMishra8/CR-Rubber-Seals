@@ -1,21 +1,363 @@
-// Content data for CR Rubber & Seals Private Limited
-// Extracted faithfully from the source site data model.
+// Content data for CR Rubber and Seals Private Limited
+// Source: Approved Website Content & SEO Guide.
 
-export const heroSlides = [{id:"hydraulic",tag:"Precision Engineered",title:`Hydraulic Seals
-Built for Performance`,description:"ISO 9001:2015 certified precision seals designed for mission-critical hydraulic systems across industries.",badge:"AS9100D Standard",image:"/images/slide-1.png"},{id:"orings",tag:"Zero Flash Elastomers",title:`High-Performance
-O-Rings & Seals`,description:"FDA compliant, thermally resistant elastomers engineered for the most demanding sealing applications.",badge:"FDA Compliant",image:"/images/slide-2.png"},{id:"gaskets",tag:"Fabric Reinforced",title:`Custom Diaphragms
-& Gaskets`,description:"Fabric reinforced rubber diaphragms and gaskets for high-pressure sealing across automotive & industrial sectors.",badge:"High Pressure Rated",image:"/images/slide-3.png"},{id:"extruded",tag:"CNC Machined",title:`Extruded Profiles
-& Rubber Sleeves`,description:"Custom compound die-cut profiles and CNC machined seals — no tooling cost, no minimum order quantity.",badge:"No Tooling Cost",image:"/images/slide-4.png"}] as const
+export const heroSlides = [
+  {
+    id: 'hydraulic-pneumatic',
+    tag: 'Precision Sealing Solutions',
+    title: `India's Most Trusted Hydraulic &
+Pneumatic Seal Manufacturer`,
+    description:
+      'ISO 9001:2015 certified manufacturer of hydraulic seals, pneumatic seals, oil seals, O-rings, PU products and custom moulded rubber components.',
+    badge: 'ISO 9001:2015 Certified',
+    image: '/images/slide-1.png',
+  },
+  {
+    id: 'machined-seals',
+    tag: 'One Hour Seal Factory',
+    title: `Custom Machined Seals
+Up to 1500mm OD`,
+    description:
+      'CNC-machined custom seals with 125+ profiles — no tooling cost, no minimum order. Large diameter and TBM seals up to 7500mm.',
+    badge: 'No Tooling Cost · No MOQ',
+    image: '/images/slide-4.png',
+  },
+  {
+    id: 'orings',
+    tag: 'Elastomer Engineering',
+    title: `O-Rings & Rings in
+Every Material`,
+    description:
+      'NBR, Viton, Silicone and EPDM O-rings, X-rings, V-rings, backup rings and O-ring cord — standard and non-standard sizes.',
+    badge: 'Standard & Custom Sizes',
+    image: '/images/slide-2.png',
+  },
+  {
+    id: 'moulded-pu',
+    tag: 'Sister Company of Crown Rubber Works',
+    title: `Moulded Rubber &
+Polyurethane Products`,
+    description:
+      'Custom moulded rubber parts, gaskets, diaphragms and a complete polyurethane range for industrial, mining and material-handling applications.',
+    badge: 'In-House R&D & Compounding',
+    image: '/images/slide-3.png',
+  },
+] as const
 
-export const navItems = [{label:"Home",id:"home"},{label:"Products",id:"products"},{label:"About",id:"about"},{label:"Industries",id:"industries"},{label:"Certifications",id:"certifications"},{label:"Blogs",id:"blogs"},{label:"Contact Us",id:"contact"}] as const
+export const navItems = [
+  { label: 'Home', id: 'home' },
+  { label: 'Products', id: 'products' },
+  { label: 'About Us', id: 'about' },
+  { label: 'Quality & Certifications', id: 'certifications' },
+  { label: 'Industries', id: 'industries' },
+  { label: 'Blogs', id: 'blogs' },
+  { label: 'Contact Us', id: 'contact' },
+] as const
 
-export const certifications = [{id:"iso-9001",title:"ISO 9001:2015 Quality Management System",issuedBy:"CCPL Certification Services",number:"CCPL/QMS/D1131",scope:"Manufacturing and supply of hydraulic seals, pneumatic seals, oil seals, polyurethane products, moulded rubber products, and sealing kits.",validUntil:"21 May 2029",downloadLabel:"Download ISO 9001:2015 Certificate (PDF)"},{id:"iec",title:"Importer Exporter Code (IEC)",issuedBy:"Directorate General of Foreign Trade, Government of India",number:"AAMCC7518G",scope:"Authorization for international trade operations — importing premium raw materials from Austria, Taiwan, Turkey, Italy, and Singapore, and exporting finished sealing products worldwide.",validUntil:"Active (Lifetime)",downloadLabel:"Download IEC Certificate (PDF)"},{id:"gst",title:"GST Registration",issuedBy:"Government of India — Goods and Services Tax",number:"27AAMCC7518G1ZF",scope:"Regular GST registration for CR Rubber and Seals Private Limited, Maharashtra. Compliant business operations across India.",validUntil:"Active",downloadLabel:"Download GST Certificate (PDF)"}] as const
+export const certifications = [
+  {
+    id: 'iso-9001',
+    title: 'ISO 9001:2015 Certified',
+    icon: 'ShieldCheck',
+    number: 'CCPL/QMS/D1131',
+    summary:
+      'Quality management system certification covering manufacturing and supply of hydraulic, pneumatic seals, oil seals, PU products and moulded rubber products.',
+    details: [
+      ['Certificate Number', 'CCPL/QMS/D1131'],
+      ['Issued On', '22 May 2026'],
+      ['Valid Until', '21 May 2029'],
+      ['1st Surveillance Due', '22 April 2027'],
+      ['2nd Surveillance Due', '22 April 2028'],
+      ['Certifying Body', 'Care Certification Private Limited (CCPL), New Delhi'],
+      ['Accreditation', 'IAF — EGAC Accredited, CAB #012308'],
+      ['IAF Code', '14'],
+      [
+        'Scope',
+        'Manufacturing & Supply of Hydraulic, Pneumatic Seals, Oil Seals, PU Products & Moulded Rubber Products',
+      ],
+    ],
+    downloadLabel: 'Download ISO 9001:2015 Certificate (PDF)',
+  },
+  {
+    id: 'iec',
+    title: 'Importer-Exporter Code (IEC)',
+    icon: 'Globe',
+    number: 'AAMCC7518G',
+    summary:
+      'Registered with the DGFT, Government of India — authorising CR Rubber and Seals Pvt. Ltd. for international import and export operations.',
+    details: [
+      ['IEC Number', 'AAMCC7518G'],
+      ['Date of Issue', '14 January 2026'],
+      ['Issuing Authority', 'DGFT — Additional Director General of Foreign Trade, Mumbai'],
+      ['PAN', 'AAMCC7518G'],
+      [
+        'Registered Address',
+        'Shed W 10, TTC Industrial Area, Pawane MIDC, Navi Mumbai, Thane, Maharashtra — 400705',
+      ],
+      ['Signatory', 'Mohammad Anis Ansari, Director'],
+    ],
+    downloadLabel: 'Download IEC Certificate (PDF)',
+  },
+  {
+    id: 'gst',
+    title: 'GST Registration',
+    icon: 'FileCheck2',
+    number: '27AAMCC7518G1ZF',
+    summary:
+      'Regular GST registration for CR Rubber and Seals Private Limited under the jurisdiction of Mumbai, Maharashtra.',
+    details: [
+      ['GSTIN', '27AAMCC7518G1ZF'],
+      ['Registration Type', 'Regular'],
+      ['Period of Validity', '02/06/2025 — Not Applicable'],
+      [
+        'Principal Place of Business',
+        'Shed W 10, TTC Industrial Area, Pawane MIDC Road, Navi Mumbai — 400705',
+      ],
+      ['Approving Officer', 'Rekha Arun Sitap, Superintendent, Mumbai'],
+    ],
+    downloadLabel: 'Download GST Certificate (PDF)',
+  },
+] as const
 
-export const timeline = [{year:"1995",title:"The Beginning",description:"CR Rubber & Seals Private Limited founded in Navi Mumbai under the leadership of Mr. Anis Ansari, starting with a focus on manufacturing quality rubber seals and components."},{year:"2000s",title:"Expansion & CNC Capability",description:"Expanded manufacturing capabilities with advanced CNC seal manufacturing machines. Began exporting to Gulf countries and established global material sourcing partnerships."},{year:"2015",title:"ISO 9001:2015 Certification",description:"Achieved ISO 9001:2015 certification (Certificate No. CCPL/QMS/D1131), formalizing quality management systems across all manufacturing and supply operations."},{year:"2025",title:"Incorporation as Pvt. Ltd.",description:"Incorporated as CR Rubber and Seals Private Limited, strengthening corporate structure and compliance for expanded domestic and international operations."},{year:"2026",title:"ISO Renewal & Continued Growth",description:"ISO 9001:2015 certification renewed and valid until 2029. Now serving 12+ industries with 100+ product types and exporting to multiple countries."}] as const
+export const timeline = [
+  {
+    year: '1995',
+    title: 'Crown Rubber Works Founded',
+    description:
+      'Crown Rubber Works founded in Navi Mumbai by Mr. Mohammad Anis Ansari. Began manufacturing hydraulic and rubber seals for Indian industry.',
+  },
+  {
+    year: '2000s',
+    title: 'CNC Capability & Export',
+    description:
+      'Crown Rubber Works expanded into CNC seal manufacturing and international export. Began supplying Gulf countries, Singapore and Sri Lanka.',
+  },
+  {
+    year: '2025',
+    title: 'CR Rubber and Seals Pvt. Ltd. Established',
+    description:
+      'CR Rubber and Seals Private Limited established as the sister company of Crown Rubber Works. Both entities operate from the same facility at Pawane MIDC, Navi Mumbai. GST registration active since June 2025.',
+  },
+  {
+    year: '2026',
+    title: 'ISO & IEC Certification',
+    description:
+      'CR Rubber and Seals Pvt. Ltd. receives ISO 9001:2015 certification (CCPL/QMS/D1131, valid to 21 May 2029) and IEC registration (AAMCC7518G).',
+  },
+] as const
 
-export const industries = [{id:"hydraulic",name:"Hydraulic Industry",description:"Complete range of hydraulic seals including piston seals, rod seals, wiper seals, and guide rings for hydraulic cylinders and systems.",keyChallenges:"High pressure, extreme temperatures, reciprocating motion, fluid compatibility.",solutionsProvided:"Ck-series piston seals, CS-series rod seals, CA-series wiper seals, and Cf-series guide rings in PU, NBR, FPM, and PTFE.",recommendedMaterials:["Polyurethane (PU)","Nitrile (NBR)","FKM / Viton","PTFE","POM"],standardsComplied:["ISO 5597","ISO 7425","DIN 3771"],iconName:"Gauge"},{id:"mining",name:"Mining Industry",description:"Heavy-duty sealing solutions for mining equipment including rock breakers, excavators, and mineral processing machinery.",keyChallenges:"Abrasive environments, high shock loads, extreme pressure, dust contamination.",solutionsProvided:"Rock breaker seal kits, PU mining screens (KK PU brand), PU hydrocyclones, mud pump seals, and heavy-duty wiper seals.",recommendedMaterials:["Polyurethane (PU)","NBR","FKM","Cast Iron"],standardsComplied:["ISO 9001:2015"],iconName:"Pickaxe"},{id:"construction",name:"Construction & Earthmoving",description:"Seals and seal kits for construction equipment including excavators, loaders, bulldozers, and cranes from all major OEMs.",keyChallenges:"High cyclic loads, contamination from dust and mud, temperature extremes.",solutionsProvided:"Complete pump seal kits for BEML, Komatsu, L&T, Caterpillar, and TATA equipment. Custom CNC-machined seals for repair and maintenance.",recommendedMaterials:["PU","NBR","PTFE","FKM"],standardsComplied:["ISO 9001:2015","OEM Specifications"],iconName:"HardHat"},{id:"oil-gas",name:"Oil & Gas Industry",description:"Specialized sealing solutions for oil and gas applications including mud pumps, valves, and downhole equipment.",keyChallenges:"High pressure, aggressive chemicals, extreme temperatures, explosive decompression resistance.",solutionsProvided:"Mud pump seals (PU/Rubber/Cast Iron), FKM O-rings, large diameter seals, and custom CNC-machined seals up to 700 bar.",recommendedMaterials:["FKM / Viton","HNBR","PTFE","PU"],standardsComplied:["NACE MR0175","API 6A"],iconName:"Fuel"},{id:"power",name:"Power Plants",description:"Sealing solutions for thermal, hydro, and nuclear power generation equipment including turbines, pumps, and valves.",keyChallenges:"Steam exposure, high temperatures, pressure cycling, radiation resistance.",solutionsProvided:"High-temperature oil seals, FKM O-rings, PTFE backup rings, and custom gaskets for critical power generation equipment.",recommendedMaterials:["FKM / Viton","PTFE","Silicone","EPDM"],standardsComplied:["ISO 9001:2015","ASME B16.21"],iconName:"Zap"},{id:"steel",name:"Steel Plants",description:"Durable seals for steel manufacturing equipment including rolling mills, hydraulic systems, and material handling machinery.",keyChallenges:"Extreme heat, molten metal splatter, heavy contamination, continuous operation.",solutionsProvided:"High-temperature hydraulic seals, fabric-reinforced oil seals, PU wiper seals, and custom moulded rubber parts.",recommendedMaterials:["FKM","PU","NBR + Fabric","Silicone"],standardsComplied:["ISO 9001:2015"],iconName:"Factory"},{id:"marine",name:"Ship Building & Railway",description:"Seals for marine propulsion systems, railway bogies, and related transportation equipment.",keyChallenges:"Salt water exposure, vibration, broad temperature range, long service life requirements.",solutionsProvided:"Large diameter seals, V-rings, oil seals for shaft applications, rubber diaphragms, and custom moulded components.",recommendedMaterials:["NBR","EPDM","FKM","PU"],standardsComplied:["ISO 9001:2015"],iconName:"Ship"},{id:"pharma",name:"Pharmaceutical Industry",description:"Clean, contamination-free sealing components for pharmaceutical processing and packaging equipment.",keyChallenges:"Sterilization cycles, chemical cleaning agents, contamination prevention, FDA compliance.",solutionsProvided:"Silicone O-rings, EPDM gaskets, PTFE-lined seals, and custom moulded rubber parts for pharmaceutical applications.",recommendedMaterials:["Silicone (VMQ)","EPDM","PTFE","FKM"],standardsComplied:["ISO 9001:2015"],iconName:"Pill"},{id:"agriculture",name:"Agriculture Industry",description:"Seals for agricultural machinery including tractors, harvesters, irrigation pumps, and sprayers.",keyChallenges:"Weather exposure, dust and dirt, wide temperature range, cost-effective solutions.",solutionsProvided:"Standard oil seals, PU bushes, rubber gaskets, O-rings, and custom moulded parts for agricultural equipment.",recommendedMaterials:["NBR","PU","EPDM"],standardsComplied:["ISO 9001:2015"],iconName:"Sprout"},{id:"cement",name:"Cement Plants",description:"Heavy-duty sealing solutions for cement manufacturing equipment including crushers, mills, and conveyors.",keyChallenges:"Abrasive cement dust, high temperatures, heavy mechanical loads, continuous operation.",solutionsProvided:"PU wiper seals, heavy-duty guide rings, fabric-reinforced seals, and custom large diameter seals.",recommendedMaterials:["PU","NBR","FKM","PTFE"],standardsComplied:["ISO 9001:2015"],iconName:"Building2"},{id:"food",name:"Food & Beverages",description:"Sealing components for food processing, bottling, and packaging equipment requiring hygienic design.",keyChallenges:"Food contact safety, CIP/SIP cleaning, temperature cycling, no taste or odor transfer.",solutionsProvided:"EPDM and silicone gaskets, FDA-compatible O-rings, and PTFE seals for food processing equipment.",recommendedMaterials:["EPDM","Silicone (VMQ)","PTFE"],standardsComplied:["ISO 9001:2015"],iconName:"UtensilsCrossed"},{id:"chemical",name:"Chemical Processing",description:"Chemical-resistant sealing solutions for pumps, valves, reactors, and piping systems in chemical plants.",keyChallenges:"Aggressive chemical attack, wide pH range, temperature extremes, pressure variations.",solutionsProvided:"FKM O-rings, PTFE gaskets, Teflon rods and components, and custom elastomer compounds for chemical resistance.",recommendedMaterials:["FKM / Viton","PTFE","EPDM","Silicone"],standardsComplied:["ISO 9001:2015"],iconName:"FlaskConical"}] as const
+export const industries = [
+  {
+    id: 'hydraulic',
+    name: 'Hydraulic Industry',
+    iconName: 'Gauge',
+    description:
+      'Hydraulic systems demand seals with exceptional pressure resistance and precise tolerancing. Our piston seals, rod seals, wiper seals and guide rings are engineered for pressures up to 700 bar, with materials ranging from NBR to PTFE to FKM for every fluid compatibility requirement.',
+    keyProducts: [
+      'Piston Seals',
+      'Rod Seals',
+      'Wiper / Dust Seals',
+      'Guide Rings',
+      'Seal Kits for all major OEMs',
+    ],
+  },
+  {
+    id: 'construction',
+    name: 'Construction & Earthmoving',
+    iconName: 'HardHat',
+    description:
+      'Construction and earthmoving equipment operate in harsh, contaminated environments. Our seal kits for BEML, Komatsu, L&T, Caterpillar and TATA excavators are directly interchangeable with OEM components, ensuring fast maintenance turnaround on site.',
+    keyProducts: [
+      'Rock Breaker Seal Kits',
+      'Pump Seal Kits (all excavator brands)',
+      'Hydraulic Cylinder Seals',
+      'Wiper / Dust Seals',
+      'Custom O-rings & Backup Rings',
+    ],
+  },
+  {
+    id: 'mining',
+    name: 'Mining Industry',
+    iconName: 'Pickaxe',
+    description:
+      'Mining applications require the toughest sealing solutions. We manufacture TBM seals up to 7500mm diameter for tunnel boring machines, PU mining screens for ore separation, and hydrocyclone components — serving India\u2019s underground and surface mining sector.',
+    keyProducts: [
+      'TBM Seals up to 7500mm OD',
+      'PU Mining Screens',
+      'Hydrocyclone Separators',
+      'Large Diameter Machined Seals',
+      'Mud Pump Seals for drilling',
+    ],
+  },
+  {
+    id: 'oil-gas',
+    name: 'Oil & Gas Industry',
+    iconName: 'Fuel',
+    description:
+      'Oil and gas operations demand seals that withstand extreme pressures, temperatures and chemical exposure. Our Viton (FKM) and PTFE range provides superior chemical resistance, while our mud pump seals handle the toughest drilling environments.',
+    keyProducts: [
+      'Viton / FKM O-Rings & Seals',
+      'Mud Pump Seals (PU/Rubber/Cast Iron)',
+      'High-Pressure Hydraulic Seals (up to 700 bar)',
+      'PTFE Products',
+      'X-Rings (Quad Rings) for static/dynamic sealing',
+    ],
+  },
+  {
+    id: 'power-steel-cement',
+    name: 'Power, Steel & Cement Plants',
+    iconName: 'Factory',
+    description:
+      'Heavy industrial plant environments combine high temperatures, chemical exposure and continuous duty cycles. Our fabric oil seals, high-temperature Viton seals and PU products are specified for rotating equipment, conveyor systems and hydraulic machinery.',
+    keyProducts: [
+      'Fabric Oil Seals',
+      'PU Scrapers for conveyor belts',
+      'High-Temperature Viton Seals',
+      'V-Rings for rotating equipment',
+      'Custom Moulded Rubber Parts',
+    ],
+  },
+  {
+    id: 'agriculture-rail',
+    name: 'Agriculture & Ship Building / Railway',
+    iconName: 'Sprout',
+    description:
+      'Agricultural equipment and railway/shipbuilding applications demand reliable, long-life sealing. Our standard O-ring kits, oil seals and custom moulded rubber parts are trusted for these sectors.',
+    keyProducts: [
+      'Oil Seals',
+      'O-Ring Kits & Boxes',
+      'V-Rings for shaft sealing',
+      'Custom Moulded Rubber Parts',
+      'Rubber Pipe Saddles',
+    ],
+  },
+] as const
 
-export const products = [{id:"piston-seals",title:"Piston Seals",category:"Hydraulic Seals",tagline:"30+ piston seal profiles for double and single-acting hydraulic cylinders.",description:"Comprehensive range of piston seals from profile Ck1 to Ck37, designed for hydraulic cylinders in various industrial applications. Available in PU, NBR, FPM, POM, and PTFE combinations with pressure ratings up to 700 bar.",features:["30+ profiles covering all standard hydraulic applications","Available with wear rings and anti-extrusion components","PU/POM and NBR/POM compound combinations for extended life","FPM/PTFE options for high-temperature applications"],materials:["PU","NBR","FPM / Viton","POM","PTFE"],hardnessRange:"70 Shore A to 95 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Pressure Range",value:"Up to 700 bar (depending on profile)"},{label:"Temperature Range",value:"-30°C to +210°C"},{label:"Surface Speed",value:"0.5 m/s to 1 m/s"},{label:"Profile Series",value:"Ck1, Ck2, Ck3, Ck4, Ck5, Ck6, Ck7, Ck8, Ck9, Ck10-12, Ck13-15, Ck16, Ck17, Ck20, Ck22, Ck23, Ck25, Ck26, Ck27, Ck28, Ck30, Ck33, Ck35, Ck36, Ck37"}],applications:["Hydraulic cylinders for construction equipment","Industrial hydraulic presses","Mobile hydraulic systems","Material handling equipment"],imagePlaceholderColor:"bg-slate-100 border-red-500 text-red-500"},{id:"rod-seals",title:"Rod Seals",category:"Hydraulic Seals",tagline:"20+ rod seal profiles for leak-free hydraulic cylinder rod sealing.",description:"Complete range of rod seals from profile CS1 to CS34 for hydraulic cylinder rods. Manufactured in PU, NBR, FPM, and PTFE with fabric-reinforced options for extreme conditions. Engineered for minimal leakage and extended service life.",features:["20+ profiles from CS1 to CS34 covering all rod diameters","PU/POM and PTFE/NBR combinations for diverse applications","Fabric-reinforced options for extreme pressure and temperature","Bi-directional sealing capability in selected profiles"],materials:["PU","NBR","FPM / Viton","PTFE","POM"],hardnessRange:"70 Shore A to 95 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Pressure Range",value:"Up to 700 bar"},{label:"Temperature Range",value:"-30°C to +250°C"},{label:"Surface Speed",value:"0.5 m/s to 4 m/s"},{label:"Profile Series",value:"CS1, CS2, CS2-P, CS3, CS5, CS6, CS8, CS9, CS10-12, CS16, CS17, CS20, CS25-27, CS28, CS29, CS30, CS32, CS33, CS34"}],applications:["Hydraulic cylinder rod sealing","Heavy equipment hydraulic systems","Industrial actuators","Mobile hydraulic applications"],imagePlaceholderColor:"bg-slate-100 border-red-500 text-red-500"},{id:"wiper-seals",title:"Wiper & Dust Seals",category:"Hydraulic Seals",tagline:"Effective contaminant exclusion for hydraulic and pneumatic cylinders.",description:"Range of wiper and dust seals from profile CA1 to CA17 designed to prevent dirt, dust, moisture, and other contaminants from entering cylinder assemblies. Available in PU, NBR, and PTFE configurations.",features:["10+ profiles covering standard and heavy-duty applications","PU and NBR options for different operating conditions","PTFE/NBR and PTFE/FPM combinations for extreme environments","High surface speed capability (up to 15 m/s for CA11)"],materials:["PU","NBR","PTFE","FPM"],hardnessRange:"70 Shore A to 90 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Temperature Range",value:"-45°C to +250°C"},{label:"Surface Speed",value:"Up to 15 m/s"},{label:"Profile Series",value:"CA1, CA2, CA3, CA4, CA8, CA11, CA15, CA16, CA17"}],applications:["Hydraulic cylinder rod wipers","Pneumatic cylinder dust seals","Construction and mining equipment","Industrial machinery"],imagePlaceholderColor:"bg-slate-100 border-red-500 text-red-500"},{id:"guide-rings",title:"Guide Rings",category:"Hydraulic Seals",tagline:"Lateral support and wear resistance for hydraulic cylinders.",description:"Guide rings from profile Cf1 to Cf10 provide lateral support to pistons and rods in hydraulic cylinders. Manufactured in POM, PTFE, and Polyester Fabric for low friction and long service life.",features:["10 profiles covering standard guide ring applications","POM and PTFE options for different operating temperatures","Fabric-reinforced options for heavy-duty applications","Low friction, wear-resistant materials"],materials:["POM","PTFE","Polyester Fabric"],hardnessRange:"60 Shore D to 80 Shore D",certifications:["ISO 9001:2015"],specs:[{label:"Temperature Range",value:"-60°C to +260°C"},{label:"Surface Speed",value:"Up to 4 m/s"},{label:"Profile Series",value:"Cf1, Cf2, Cf3, Cf4, Cf5, Cf6, Cf7, Cf8, Cf9, Cf10"}],applications:["Hydraulic cylinder piston guidance","Rod bearing support","Heavy equipment cylinders","Industrial hydraulic systems"],imagePlaceholderColor:"bg-slate-100 border-red-500 text-red-500"},{id:"pneumatic-seals",title:"Pneumatic Seals",category:"Hydraulic Seals",tagline:"Reliable sealing for pneumatic systems and actuators.",description:"Specialized seals for pneumatic applications including cylinders, valves, and actuators. Designed for low-friction operation with PU and NBR materials.",features:["Low friction for smooth pneumatic operation","Available in PU and NBR compounds","Suitable for lubricated and non-lubricated service"],materials:["PU","NBR"],hardnessRange:"70 Shore A to 90 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Pressure Range",value:"Up to 16 bar"},{label:"Temperature Range",value:"-30°C to +100°C"},{label:"Speed",value:"Up to 1 m/s"}],applications:["Pneumatic cylinders","Air actuators","Pneumatic valves","Industrial automation"],imagePlaceholderColor:"bg-slate-100 border-red-500 text-red-500"},{id:"rotary-shaft-seals",title:"Rotary Shaft Seals",category:"Oil Seals",tagline:"Complete range of rotary shaft seals for every application.",description:"Eleven distinct oil seal types from OS-1 to OS-11 covering standard, metal encased, closed type, dual-lip, heavy-duty, and dual-fluid sealing applications. Each type designed for specific operating conditions with NBR, FPM, and metal components.",features:["OS-1: Standard rotary shaft seal, rubber OD, single lip with spring","OS-2: Metal outside open type for better thermal expansion resistance","OS-3: Closed type with complete metal encasement for heavy applications","OS-4 to OS-6: With additional dust lip for contaminated environments","OS-7: For pressure above 0.5 bar and small diameter shafts","OS-8: Improved housing retention design","OS-9: Dual fluid sealing capability","OS-10/OS-11: Heavy duty for vehicle axles with dual dust protection"],materials:["NBR","FPM / Viton","Metal Casing"],hardnessRange:"70 Shore A to 85 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Pressure Range",value:"Up to 0.5 bar (standard), above 0.5 bar (OS-7)"},{label:"Temperature Range",value:"-30°C to +120°C"},{label:"Types Available",value:"OS-1, OS-2, OS-3, OS-4, OS-5, OS-6, OS-7, OS-8, OS-9, OS-10, OS-11"},{label:"Shaft Diameter",value:"Custom sizes as per requirement"}],applications:["Electric motors and gearboxes","Pumps and compressors","Automotive engines and transmissions","Heavy vehicle axles","Industrial rotating equipment"],imagePlaceholderColor:"bg-slate-100 border-teal-500 text-teal-500"},{id:"fabric-oil-seals",title:"Fabric Oil Seals",category:"Oil Seals",tagline:"Fabric-reinforced oil seals for extended service life.",description:"Specialized fabric-reinforced oil seals in four configurations (FOS-1 to FOS-4) designed for applications where standard rubber seals may not provide adequate service life. Fabric reinforcement adds structural integrity and wear resistance.",features:["FOS-1: Standard fabric seal for applications without additional lubrication","FOS-2: Extended life design requiring lubricating groove in housing","FOS-3: With slots on back face for sealing lip lubrication","FOS-4: Enhanced life design with housing lubrication port"],materials:["Fabric Reinforced Rubber"],hardnessRange:"75 Shore A to 90 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Temperature Range",value:"-30°C to +120°C"},{label:"Types Available",value:"FOS-1, FOS-2, FOS-3, FOS-4"}],applications:["Conveyor rollers","Electric motors","Vacuum pumps","High-performance vehicles"],imagePlaceholderColor:"bg-slate-100 border-teal-500 text-teal-500"},{id:"o-rings",title:"O-Rings",category:"O-Rings & Rings",tagline:"Standard and non-standard O-rings in all elastomeric materials.",description:"Complete range of O-rings available in NBR, Viton/FKM, Silicone/VMQ, and EPDM materials. Suitable for static and dynamic sealing applications across all industries. Standard sizes and custom dimensions available.",features:["Available in NBR (general purpose), FKM (chemical resistant), VMQ (wide temperature), EPDM (weather resistant)","Standard AS568 and non-standard sizes","Excellent compression set resistance","Suitable for both static and dynamic applications"],materials:["NBR (Nitrile)","FKM / Viton","Silicone (VMQ)","EPDM"],hardnessRange:"40 Shore A to 90 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Pressure Range",value:"Up to 250 bar (static)"},{label:"Temperature Range",value:"-60°C to +230°C (depending on material)"},{label:"Materials",value:"NBR, FKM, VMQ, EPDM"}],applications:["General industrial sealing","Automotive components","Chemical processing equipment","Food processing machinery","Hydraulic and pneumatic systems"],imagePlaceholderColor:"bg-slate-100 border-blue-500 text-blue-500"},{id:"backup-rings",title:"Backup Rings",category:"O-Rings & Rings",tagline:"Anti-extrusion rings for high-pressure O-ring applications.",description:"Backup rings from profile CST8 to CST13 in POM, PTFE, and Polyester Fabric. Prevent O-ring extrusion in high-pressure applications and extend seal life.",features:["6 profiles covering all standard backup ring configurations","POM for general high pressure, PTFE for extreme temperatures","Polyester fabric for heavy-duty applications","Prevents O-ring damage from extrusion gaps"],materials:["POM","PTFE","Polyester Fabric"],hardnessRange:"60 Shore D to 80 Shore D",certifications:["ISO 9001:2015"],specs:[{label:"Temperature Range",value:"-200°C to +260°C"},{label:"Profile Series",value:"CST8, CST9, CST10, CST11, CST12, CST13"},{label:"Material Options",value:"POM, PTFE, Polyester Fabric"}],applications:["High-pressure hydraulic systems","Pneumatic cylinders and valves","Extreme temperature sealing","Heavy-duty industrial equipment"],imagePlaceholderColor:"bg-slate-100 border-blue-500 text-blue-500"},{id:"v-rings",title:"V-Rings",category:"O-Rings & Rings",tagline:"All-rubber axial shaft seals for primary and backup sealing.",description:"Forsheda-type V-rings in four profile types — CVA, CVS, CVE, and CVL. All-rubber seals that seat directly on the shaft and seal axially against a counterface. Excellent as primary or backup seals and as dust slingers.",features:["CVA: Standard all-rubber axial seal for shafts","CVS: Can be used as slinger for foreign materials at higher speeds","CVE: Effective for both primary and backup sealing","CVL: Large diameter version for industrial shaft applications"],materials:["FKM (Viton)","NBR (Nitrile)"],hardnessRange:"70 Shore A to 80 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Temperature Range",value:"-30°C to +200°C"},{label:"Pressure",value:"Low pressure applications"},{label:"Types",value:"CVA, CVS, CVE, CVL"}],applications:["Rotary shaft sealing","Bearing protection","Dust and contamination exclusion","Primary and backup sealing"],imagePlaceholderColor:"bg-slate-100 border-blue-500 text-blue-500"},{id:"x-rings",title:"X-Rings",category:"O-Rings & Rings",tagline:"4-lobe configuration for double the sealing surface.",description:"X-Rings (Quad Rings) with unique 4-lobe configuration providing 2 sealing areas per side compared to 1 on standard O-rings. Suitable for both static and dynamic applications with higher extrusion resistance.",features:["4-lobe design provides twice the sealing surface of O-rings","Better stability in dynamic applications","Reduced friction compared to O-rings","Higher resistance to spiral failure"],materials:["NBR","FKM"],hardnessRange:"60 Shore A to 90 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Pressure Range",value:"Up to 300 bar"},{label:"Temperature Range",value:"-30°C to +200°C"},{label:"MOQ",value:"500 units"}],applications:["Reciprocating seals","Rotary applications","Static sealing","Where O-rings fail due to spiral failure"],imagePlaceholderColor:"bg-slate-100 border-blue-500 text-blue-500"},{id:"pu-seals",title:"PU Seals & Blocks",category:"PU Products",tagline:"Industrial polyurethane seals and blocks for diverse applications.",description:"High-quality polyurethane seals for industrial hydraulic machines available in any size and model. Also includes multicolor PU blocks for various industrial applications — offering superior wear resistance, high load-bearing capacity, and excellent tear strength.",features:["Available in any size and model","Superior wear resistance compared to rubber","High load-bearing capacity","Excellent tear strength and abrasion resistance"],materials:["Polyurethane (PU)"],hardnessRange:"70 Shore A to 95 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Temperature Range",value:"-30°C to +100°C"},{label:"Colors",value:"Various (multicolor blocks available)"},{label:"Custom Sizes",value:"Any size and model available"}],applications:["Hydraulic machinery","Industrial equipment","Material handling","General industrial applications"],imagePlaceholderColor:"bg-slate-100 border-yellow-500 text-yellow-500"},{id:"pu-bushes-couplings",title:"PU Bushes & Couplings",category:"PU Products",tagline:"Polyurethane bushes and spider couplings for industrial applications.",description:"PU bushes for automobile industry (10-20mm ID, 25-50mm OD) and PU spider couplings in customized specifications. Minimum order quantity 20 pieces for couplings, hardness range 20-80 Shore A.",features:["PU bushes: 10-20mm ID, 25-50mm OD for automotive use","PU couplings: rectangular profile, 20-80 Shore A","Excellent vibration dampening characteristics","Wear-resistant and long-lasting"],materials:["Polyurethane (PU)"],hardnessRange:"20 Shore A to 80 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Temperature Range",value:"-30°C to +100°C"},{label:"Bush ID Range",value:"10-20mm"},{label:"Bush OD Range",value:"25-50mm"},{label:"Coupling MOQ",value:"20 pieces"}],applications:["Automobile suspension systems","Shaft coupling applications","Vibration isolation","Industrial machinery"],imagePlaceholderColor:"bg-slate-100 border-yellow-500 text-yellow-500"},{id:"pu-rollers-wheels",title:"PU Rollers & Wheels",category:"PU Products",tagline:"Industrial polyurethane rollers and wheels for material handling.",description:"PU rollers (model PU 200) for drilling and industrial applications. PU wheels in yellow, red, and orange — diameter range 0-600mm, density 1.12-1.25 g/cm³ with cast iron core options.",features:["PU 200 roller model for drilling and industrial use","Wheels from 0-600mm diameter","Available in yellow, red, and orange colors","Density range 1.12-1.25 g/cm³"],materials:["Polyurethane (PU)","Cast Iron Core"],hardnessRange:"70 Shore A to 95 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Wheel Diameter",value:"0-600mm"},{label:"Density",value:"1.12-1.25 g/cm³"},{label:"Colors",value:"Yellow, Red, Orange"},{label:"Model",value:"PU 200 (Rollers)"}],applications:["Industrial casters and wheels","Material handling equipment","Drilling machinery","Conveyor systems"],imagePlaceholderColor:"bg-slate-100 border-yellow-500 text-yellow-500"},{id:"pu-sheets-pads",title:"PU Pads, Sheets & Scrapers",category:"PU Products",tagline:"Polyurethane sheets, damping pads, and belt scrapers.",description:"Range of PU products including printed sheets (2mm+ thickness), square pads in red/green/yellow/black/white, damping pads (20-80 Shore A), and PU scrapers (JR Industries brand) for belt cleaning and conveyor systems.",features:["PU sheets: printed, 2mm thickness and above","PU pads: square shape, multiple color options","Damping pads: 20-80 Shore A for vibration control","PU scrapers: red, keep belts safe and increase production life"],materials:["Polyurethane (PU)"],hardnessRange:"20 Shore A to 80 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Sheet Thickness",value:"2mm and above"},{label:"Pad Colors",value:"Red, Green, Yellow, Black, White"},{label:"Damping Pad Hardness",value:"20-80 Shore A"},{label:"Scraper Brand",value:"JR Industries"}],applications:["Industrial flooring and cushioning","Vibration dampening","Belt cleaning and conveyor systems","Industrial lining and gasketing"],imagePlaceholderColor:"bg-slate-100 border-yellow-500 text-yellow-500"},{id:"pu-mining-screens",title:"PU Mining Screens & Hydrocyclone",category:"PU Products",tagline:"High-quality PU mining screens and hydrocyclone separators.",description:"High-quality PU mining screens and hydrocyclone separators for slurry separation based on particle weight. Sourced with global standards for mining operations.",features:["KK PU brand mining screens for aggregate grading","PU hydrocyclones for gravity-based slurry separation","Superior wear life compared to wire screens","Custom aperture sizes available"],materials:["Polyurethane (PU)"],hardnessRange:"80 Shore A to 95 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Screen Brand",value:"KK PU"},{label:"Application",value:"Mining Grade Slurry Separation"}],applications:["Mining and aggregate screening","Slurry separation"],imagePlaceholderColor:"bg-slate-100 border-yellow-500 text-yellow-500"},{id:"pu-mud-pump",title:"Mud Pump Seals & PU Sleeves",category:"PU Products",tagline:"Mud pump seals and PU sleeves for industrial applications.",description:'Mud pump seals for oil & gas drilling and PU sleeves 24" × 72" — in high demand for steel coil protection and industrial processing.',features:["Mud pump seals in PU, rubber, and cast iron",'PU sleeves 24" x 72" for steel coil protection',"Resistant to high pressure drilling muds","Excellent abrasion resistance"],materials:["Polyurethane (PU)","Rubber","Cast Iron"],hardnessRange:"70 Shore A to 95 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Sleeve Size",value:'24" x 72"'},{label:"Mud Pump Pressure",value:"High pressure oil & gas"}],applications:["Oil and gas drilling","Steel coil protection","Pump systems"],imagePlaceholderColor:"bg-slate-100 border-yellow-500 text-yellow-500"},{id:"pu-rods-sleeves",title:"PU Rods & Other Products",category:"PU Products",tagline:"PU rods, damping pads, and specialty PU products.",description:"Yellow PU rods (12-300mm diameter) with 25-30% compression. Also includes PU damping pads, PU sleeves for steel coils, and other specialty PU products for diverse industrial applications.",features:["PU rods: yellow, 12-300mm diameter range","25-30% compression rate","Excellent shock absorption properties","Custom lengths available"],materials:["Polyurethane (PU)"],hardnessRange:"70 Shore A to 95 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Rod Diameter",value:"12-300mm"},{label:"Compression",value:"25-30%"},{label:"Color",value:"Yellow"},{label:"Temperature Range",value:"-30°C to +100°C"}],applications:["Industrial machinery components","Shock absorption","Custom fabrication","General industrial use"],imagePlaceholderColor:"bg-slate-100 border-yellow-500 text-yellow-500"},{id:"rock-breaker-kits",title:"Rock Breaker Seal Kits",category:"Seal Kits",tagline:"Complete seal kits for rock breakers and hydraulic hammers.",description:"Durable seal kits for rock breakers, hydraulic hammers, and excavator-mounted breakers. Made using supreme quality raw materials with Nylon Rubber, Plastic, and PU components. Operating temperature range from -25°C to +200°C.",features:["Compatible with all major rock breaker brands","Made from supreme quality raw materials","Wide temperature range: -25°C to +200°C","Direct replacement for OEM components"],materials:["Nylon Rubber","Plastic","PU","NBR"],hardnessRange:"70 Shore A to 90 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Temperature Range",value:"-25°C to +200°C"},{label:"Pressure Rating",value:"High pressure"},{label:"Applications",value:"Construction, Breaker, Excavator"}],applications:["Rock breakers and hydraulic hammers","Construction equipment","Excavator-mounted breakers","Heavy equipment repair and maintenance"],imagePlaceholderColor:"bg-slate-100 border-orange-500 text-orange-500"},{id:"pump-seal-kits",title:"Pump & Excavator Seal Kits",category:"Seal Kits",tagline:"Directly interchangeable pump seal kits for major excavator brands.",description:"Comprehensive pump seal kits compatible with BEML, Komatsu, L&T, Caterpillar, and TATA excavator models. Highly durable and efficiently working — directly interchangeable with original equipment components.",features:["BEML: Precision seal kit for BEML excavator pumps","Komatsu: Directly interchangeable with Komatsu original components","L&T: Precision kit for Larsen & Toubro excavator pumps","Caterpillar: Heavy-duty kit for Cat earthmoving equipment","TATA: Durable kit for TATA Hitachi excavator models"],materials:["Rubber","PU","NBR"],hardnessRange:"70 Shore A to 90 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Temperature Range",value:"-25°C to +100°C"},{label:"Pressure Rating",value:"High pressure"},{label:"Compatible Brands",value:"BEML, Komatsu, L&T, Caterpillar, TATA"}],applications:["Excavator pump repair and maintenance","Construction equipment service","Heavy machinery overhaul"],imagePlaceholderColor:"bg-slate-100 border-orange-500 text-orange-500"},{id:"tbm-seals",title:"TBM Seals (Tunnel Boring)",category:"Seal Kits",tagline:"Large diameter seals up to 7500mm for tunnel boring applications.",description:"Specialized large-diameter seals for Tunnel Boring Machines (TBMs) up to 7500mm diameter. Includes PU seals and complete seal kits designed for the demanding conditions of tunneling and mining applications.",features:["Seals up to 7500mm diameter","PU seal and complete seal kit options","Designed for extreme tunnel boring conditions","Custom manufactured to OEM specifications"],materials:["PU","Rubber","NBR"],hardnessRange:"70 Shore A to 95 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Maximum Diameter",value:"Up to 7500mm"},{label:"Pressure Rating",value:"High pressure"},{label:"Temperature Range",value:"-30°C to +100°C"}],applications:["Tunnel boring machines","Mining equipment","Large diameter rotating equipment"],imagePlaceholderColor:"bg-slate-100 border-orange-500 text-orange-500"},{id:"custom-moulded",title:"Custom Moulded Rubber Parts",category:"Moulded Rubber",tagline:"Custom rubber components engineered to your specifications.",description:"Custom moulded rubber parts manufactured in natural rubber and other elastomers with 50/60 Shore A hardness. Customized size and shape as per customer requirements for diverse industrial applications.",features:["Custom sizes and shapes as per drawing or sample","Natural rubber compound with 50/60 Shore A hardness","Compression molding capability","Suitable for small to production-scale quantities"],materials:["Natural Rubber","NBR","EPDM","Silicone"],hardnessRange:"50 Shore A to 60 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Temperature Range",value:"-30°C to +100°C"},{label:"Hardness",value:"50/60 Shore A"},{label:"Process",value:"Compression Molding"}],applications:["General industrial applications","Automotive components","Engineering machinery","Custom sealing solutions"],imagePlaceholderColor:"bg-slate-100 border-purple-500 text-purple-500"},{id:"rubber-gaskets",title:"Rubber Gaskets & Diaphragms",category:"Moulded Rubber",tagline:"Flat and round gaskets for fluid and gas sealing.",description:"Rubber gaskets (40-90 Shore A) in flat and round configurations for preventing gas and fluid leakage in engineering and automobile industries. Also includes precision rubber diaphragms for valve and pump applications.",features:["Flat and round gasket configurations","Hardness range 40-90 Shore A","Gas and fluid leak prevention","Precision diaphragms for valves and pumps"],materials:["Natural Rubber","NBR","EPDM","Silicone"],hardnessRange:"40 Shore A to 90 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Temperature Range",value:"-30°C to +100°C"},{label:"Hardness Range",value:"40-90 Shore A"},{label:"Types",value:"Flat, Round, Custom Profile"}],applications:["Engineering machinery","Automobile industry","Valve and pump sealing","Fluid and gas systems"],imagePlaceholderColor:"bg-slate-100 border-purple-500 text-purple-500"},{id:"pipe-saddles",title:"Rubber Pipe Saddles & Mouldings",category:"Moulded Rubber",tagline:"Pipe support systems and compression moulded components.",description:"Rubber pipe saddles in NBR, EPDM, and Polyurethane for pipe support systems. Also includes compression moulded rubber parts for flywheel magnetos, copper winding bobbins, and single/multiple insert applications.",features:["Pipe saddles: support with curved section for cradling pipes","Available in NBR, EPDM, Polyurethane materials","Compression mouldings for electrical and automotive applications","Custom profiles and insert configurations"],materials:["NBR","EPDM","Polyurethane (PU)"],hardnessRange:"50 Shore A to 80 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Temperature Range",value:"-30°C to +120°C"},{label:"Materials",value:"NBR, EPDM, PU"},{label:"Process",value:"Compression Molding"}],applications:["Pipe support systems","Flywheel magnetos","Copper winding bobbins","Electrical and automotive components"],imagePlaceholderColor:"bg-slate-100 border-purple-500 text-purple-500"},{id:"cnc-machined-seals",title:"Customised Machined Seals",category:"Special Products",tagline:"The One Hour Seal Factory — custom seals without tooling cost.",description:"Advanced technology custom-made machined seals system. Up to 1500mm OD with 125+ instant profiles available. No tooling cost, no minimum order quantity. Ideal for emergency repair and maintenance with express delivery.",features:["Up to 1500mm outer diameter capacity","125+ instant profiles available from stock","No tooling cost — completely custom machining","No minimum order quantity","Express one-hour seal service for emergencies"],materials:["PU","NBR","PTFE","FKM"],hardnessRange:"70 Shore A to 95 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Maximum OD",value:"Up to 1500mm"},{label:"Available Profiles",value:"125+ instant profiles"},{label:"Pressure Range",value:"Up to 700 bar"},{label:"Temperature Range",value:"-30°C to +260°C"},{label:"Tooling Cost",value:"None"}],applications:["Emergency repair and maintenance","Custom OEM replacement seals","Large diameter sealing applications","Prototype and low-volume production"],imagePlaceholderColor:"bg-slate-100 border-green-500 text-green-500"},{id:"meander-springs",title:"Meander & Helical Springs",category:"Special Products",tagline:"Precision cantilever and helical springs for energized seals.",description:"Meander (cantilever) springs in U-Spring and V-Spring profiles, series 000-500 including weld-free micro springs. Helical coil springs manufactured from stainless steel. Both used in spring-energized sealing applications.",features:["Meander: U/V-Spring profiles in 000-500 series","Weld-free micro springs available","Helical springs: stainless steel coil springs","Box packaging for industrial supply"],materials:["Stainless Steel"],hardnessRange:"N/A (Metal Spring)",certifications:["ISO 9001:2015"],specs:[{label:"Spring Type",value:"Meander (Cantilever), Helical"},{label:"Series",value:"000-500 (Meander)"},{label:"Temperature Range",value:"-200°C to +300°C"},{label:"Material",value:"Stainless Steel"}],applications:["Spring-energized seals","High-temperature sealing","Cryogenic applications","Custom seal assemblies"],imagePlaceholderColor:"bg-slate-100 border-green-500 text-green-500"},{id:"large-diameter-seals",title:"Large Diameter Seals",category:"Special Products",tagline:"Machined seals up to 1500mm diameter without tooling.",description:"Express machined seals for large equipment and heavy machinery. Available in PU, NBR, or PTFE up to 1500mm diameter. Quick turnaround through our express seal division without any tooling cost.",features:["Up to 1500mm diameter capacity","Available in PU, NBR, and PTFE","Quickest possible turnaround via express seal division","No tooling required for custom sizes"],materials:["PU","NBR","PTFE"],hardnessRange:"70 Shore A to 95 Shore A",certifications:["ISO 9001:2015"],specs:[{label:"Maximum Diameter",value:"Up to 1500mm"},{label:"Pressure Range",value:"Up to 700 bar"},{label:"Temperature Range",value:"-30°C to +260°C"},{label:"Tooling",value:"Not required"}],applications:["Large hydraulic cylinders","Heavy machinery","Mining equipment","Industrial presses"],imagePlaceholderColor:"bg-slate-100 border-green-500 text-green-500"},{id:"teflon-nylon",title:"Teflon, Nylon & Plastic Products",category:"Special Products",tagline:"PTFE rods, nylon rods, and plastic gaskets for chemical resistance.",description:"Range of Teflon/PTFE and nylon products including smooth finished rods with corrosion resistance, sturdy nylon rods for industrial applications, and Teflon/plastic flat gaskets for chemical and pharmaceutical industries.",features:["PTFE rods: smooth finish, corrosion resistant, global standards","Nylon rods: sturdy construction for diverse applications","PTFE/plastic gaskets: silver color, standard packaging","Excellent chemical resistance properties"],materials:["PTFE (Teflon)","Nylon","Plastic"],hardnessRange:"N/A (Thermoplastic)",certifications:["ISO 9001:2015"],specs:[{label:"PTFE Temperature Range",value:"-200°C to +260°C"},{label:"Nylon Temperature Range",value:"-40°C to +120°C"},{label:"Gasket Color",value:"Silver"},{label:"Applications",value:"Chemical, Pharmaceutical, Industrial"}],applications:["Chemical processing equipment","Pharmaceutical machinery","Industrial applications","High-purity sealing"],imagePlaceholderColor:"bg-slate-100 border-green-500 text-green-500"},{id:"diffuser-plates",title:"Diffuser Plates",category:"Special Products",tagline:"Centrifugal pump diffuser rings for controlled flow.",description:"For centrifugal diffuser pumps — ring of fixed vanes for controlled flow and efficient velocity-to-pressure conversion.",features:["Ring of fixed vanes for controlled fluid flow","Efficient velocity-to-pressure head conversion","Increases centrifugal pump efficiency","Custom sizes engineered as per drawings"],materials:["Steel","Cast Iron","Bronze"],hardnessRange:"N/A (Metal Part)",certifications:["ISO 9001:2015"],specs:[{label:"Application",value:"Centrifugal Diffuser Pumps"},{label:"Size Range",value:"Custom manufactured to spec"}],applications:["Diffuser Pumps","Centrifugal Pumps","Industrial Pumps"],imagePlaceholderColor:"bg-slate-100 border-green-500 text-green-500"}] as const
+export const products = [
+  {
+    id: 'machined-seals',
+    title: 'Machined Seals',
+    category: 'Machined Seals',
+    tagline: 'CNC-machined custom seals — no tooling cost, no MOQ.',
+    description:
+      'One of our flagship capabilities — precision CNC-machined sealing solutions for the most demanding applications, with no tooling cost and no minimum order requirement.',
+    features: [
+      'Customised Machined Seals — CNC machined up to 1500mm OD, 500+ instant profiles, any material',
+      'Large Diameter Seals — up to 7500mm for Tunnel Boring Machines (TBM)',
+      'Meander Spring Seals — U-Spring and V-Spring profiles, weld-free micro spring seals',
+      'Helical Spring Seals — stainless steel, standard and custom profiles',
+      'One Hour Seal Factory — express delivery, no MOQ, no tooling cost',
+      'And more custom profiles on request',
+    ],
+  },
+  {
+    id: 'seal-kits',
+    title: 'Seal Kits',
+    category: 'Seal Kits',
+    tagline: 'OEM-interchangeable kits for construction, mining & excavation.',
+    description:
+      'Complete seal kits directly interchangeable with OEM components for all major construction, mining and excavation equipment brands — ensuring fast maintenance turnaround on site.',
+    features: [
+      'Rock Breaker Seal Kits — for hammers, breakers and construction equipment',
+      'Pump Seal Kits — compatible with BEML, Komatsu, L&T, Caterpillar, TATA and all major brands',
+      'TBM Seal Kits — complete seal kits for Tunnel Boring Machines',
+      'Pneumatic Seal Kits — reliable sealing for pneumatic applications',
+      'And more seal kit configurations for all equipment types',
+    ],
+  },
+  {
+    id: 'o-rings',
+    title: 'O-Rings',
+    category: 'O-Rings',
+    tagline: 'Any elastomer, any size — standard and non-standard.',
+    description:
+      'O-rings in any elastomeric material to any customer specification — standard and non-standard sizes, in all major ring profiles for static and dynamic sealing applications.',
+    features: [
+      'NBR O-Rings — oil-resistant, widely used across hydraulic and pneumatic applications',
+      'Viton (FKM) O-Rings — excellent chemical resistance, temperature range -15°C to 200°C',
+      'X-Rings (Quad Rings) — 4-lobe configuration for superior static and dynamic sealing',
+      'V-Rings — Forsheda-type, FKM Viton & Nitrile, ideal as dust slingers',
+      'Backup Rings — prevent O-ring extrusion under high pressure',
+      'O-Ring Boxes, Kits and Cord — and more sizes, materials and profiles on request',
+    ],
+  },
+  {
+    id: 'hydraulic-seals',
+    title: 'Hydraulic Seals',
+    category: 'Hydraulic Seals',
+    tagline: '50+ profiles, pressures up to 700 bar.',
+    description:
+      'Our hydraulic seals cover every position in a hydraulic cylinder — piston, rod, wiper and guide — available in 50+ standard profiles across all materials and pressures up to 700 bar.',
+    features: [
+      'Piston Seals — 30+ profiles in PU, NBR, FPM, PTFE, pressure up to 700 bar',
+      'Rod Seals — 20+ profiles including fabric-reinforced options for extreme conditions',
+      'Wiper / Dust Seals — prevents contamination from entering cylinder assemblies',
+      'Guide Rings — POM, PTFE and Polyester Fabric for lateral support',
+      'And more profiles and material combinations available on request',
+    ],
+  },
+  {
+    id: 'pneumatic-seals',
+    title: 'Pneumatic Seals',
+    category: 'Pneumatic Seals',
+    tagline: 'Rotary shaft oil seals, fabric oil seals & V-rings.',
+    description:
+      'Covers rotary shaft oil seals, fabric oil seals and V-rings for high-speed, contamination-sensitive and heavy-duty rotating shaft applications across all industries.',
+    features: [
+      'Oil Seals — standard, open-type, closed-type, heavy duty and dual-lip variants',
+      'Fabric Oil Seals — for vehicles, conveyor rollers, electric motors and vacuum pumps',
+      'V-Rings (CVA, CVS, CVE, CVL) — all-rubber axial seals, excellent dust slingers',
+      'Pneumatic Cylinder Seals — PU, NBR and FPM for all pneumatic applications',
+      'More variants for all shaft sizes and operating conditions',
+    ],
+  },
+  {
+    id: 'moulded-rubber',
+    title: 'Moulded Rubber Parts',
+    category: 'Moulded Rubber',
+    tagline: 'Custom compression-moulded components to exact spec.',
+    description:
+      'With in-house rubber compounding and CNC mould manufacturing, we produce custom moulded rubber components to exact client specifications — from simple gaskets to complex multi-insert mouldings.',
+    features: [
+      'Custom Moulded Rubber Parts — compression moulding in natural rubber, any hardness and size',
+      'Rubber Gaskets — flat gaskets in NBR/natural rubber, 40–90 Shore A',
+      'Rubber Diaphragms — for engineering and automotive applications',
+      'Rubber Mouldings — using single/multiple inserts and lamination packs',
+      'Rubber Pipe Saddles — in NBR and EPDM',
+      'Diffuser Plates and more custom profiles on request',
+    ],
+  },
+  {
+    id: 'teflon-nylon',
+    title: 'Teflon & Nylon',
+    category: 'Teflon & Nylon',
+    tagline: 'High-performance engineering materials.',
+    description:
+      'High-performance engineering materials for applications requiring superior chemical resistance, low friction and dimensional stability at extreme temperatures.',
+    features: [
+      'Teflon (PTFE) Rods and Sheets — smooth finish, corrosion resistant, per global standards',
+      'Nylon Rods — sturdy construction, low friction, for engineering applications',
+      'Teflon & Plastic Products — sealing components in Teflon and engineering plastics',
+      'And more profiles, sizes and custom specifications on request',
+    ],
+  },
+  {
+    id: 'polyurethane',
+    title: 'Polyurethane Products',
+    category: 'Polyurethane',
+    tagline: 'Custom hardness, colour, size and shape.',
+    description:
+      'Our comprehensive polyurethane range serves industrial, mining, automotive and material handling applications — available in custom hardness, colour, size and shape to meet exact requirements.',
+    features: [
+      'PU Seals — for hydraulic machines, any size, any model',
+      'PU Rollers, Wheels and Rods — 0–600mm, cast iron core, multiple colours',
+      'PU Blocks, Sheets, Pads and Damping Pads — hardness 20–80 Shore A',
+      'PU Bushes, Couplings and Scrapers — for automotive and conveyor applications',
+      'PU Mining Screens, Hydrocyclone and Mud Pump Seals — for mining and oil & gas',
+      'PU Sleeves, PU Rods — and more products on request',
+    ],
+  },
+] as const
 
 export const blogPosts = [{id:"1",title:"Elastomer Selection Guide: Navigating Compound Engineering",slug:"elastomer-selection-guide-navigating-compound-engineering",excerpt:"Selecting the correct rubber compound is crucial for high-pressure industrial sealing. Learn when to choose Viton, NBR, EPDM, or Polyurethane.",content:`
 # Elastomer Selection Guide: Navigating Compound Engineering
@@ -58,7 +400,7 @@ PU is highly prized for its mechanical strength, abrasion resistance, and outsta
 * **Steam & Weathering:** Use **EPDM**
 * **Standard Hydraulic Oil:** Use **Nitrile (NBR)**
 
-Selecting the correct compound extends seal lifespan, reduces machine downtime, and optimizes system efficiency. Contact our engineering desk at CR Rubber & Seals for custom compound formulations.
+Selecting the correct compound extends seal lifespan, reduces machine downtime, and optimizes system efficiency. Contact our engineering desk at CR Rubber and Seals for custom compound formulations.
 `,publishedAt:"May 28, 2026",readTime:"5 min read",category:"Engineering Research",author:"Mr. Anis Ansari"},{id:"2",title:"Unlocking Efficiency with CNC Custom Machined Seals",slug:"unlocking-efficiency-with-cnc-custom-machined-seals",excerpt:"How CNC seal manufacturing enables custom seals in under 1 hour with zero tooling costs and no minimum order quantity (MOQ).",content:`
 # Unlocking Efficiency with CNC Custom Machined Seals
 
@@ -75,7 +417,7 @@ Instead of compression molding, CNC seals are manufactured by carving profiles d
 [Billet Raw Material] ➔ [CNC Lathe Programming] ➔ [Precision Machined Seal Profile]
 \`\`\`
 
-At CR Rubber & Seals, our in-house CNC toolroom enables us to produce customized seals to exact dimensional tolerances in under an hour.
+At CR Rubber and Seals, our in-house CNC toolroom enables us to produce customized seals to exact dimensional tolerances in under an hour.
 
 ---
 
@@ -111,7 +453,7 @@ To standardize rubber tolerances, the International Organization for Standardiza
 ## Dimensional Tolerance Classes
 ISO 3302-1 divides molded rubber products into four tolerance classes, from the tightest precision to general commercial grades:
 
-* **Class M1 (Precision):** Reserved for technical applications where dimensions are critical. Requires premium raw materials, in-house tooling, and precise environment control during manufacturing. Sourced billets at CR Rubber & Seals are class M1.
+* **Class M1 (Precision):** Reserved for technical applications where dimensions are critical. Requires premium raw materials, in-house tooling, and precise environment control during manufacturing. Sourced billets at CR Rubber and Seals are class M1.
 * **Class M2 (High Quality):** Standard commercial grade for high-quality engineering components. Suitable for most industrial sealing applications.
 * **Class M3 (Good Quality):** Suitable for non-critical applications like protective bumpers or footpads.
 * **Class M4 (Non-Critical):** General commercial products where tolerances are irrelevant.
@@ -137,6 +479,5 @@ In hydraulic systems operating above **350 bar**, a variance of even 0.2mm in se
 2. **Excessive Friction:** Tight dimensions can create heavy mechanical drag, causing overheating and cylinder scoring.
 3. **By-pass Leakage:** Under-sized seals fail to pre-load properly, letting fluid bypass the piston.
 
-At CR Rubber & Seals, all CNC custom seals and aerospace components are manufactured to comply strictly with **ISO 3302-1 M1** standards, ensuring bulletproof field operations.
+At CR Rubber and Seals, all CNC custom seals are manufactured to comply strictly with **ISO 3302-1 M1** standards, ensuring bulletproof field operations.
 `,publishedAt:"May 02, 2026",readTime:"6 min read",category:"Quality Standards",author:"Quality Inspector"}] as const
-

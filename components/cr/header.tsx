@@ -68,7 +68,7 @@ export function Header() {
             href="/contact"
             className="ml-1.5 rounded-full bg-brand px-5 py-2 text-[13px] font-bold tracking-wide text-primary-foreground transition-colors hover:bg-brand-dark"
           >
-            Request Quote
+            Get a Quote
           </Link>
         </div>
 
@@ -104,7 +104,7 @@ export function Header() {
               onClick={() => setOpen(false)}
               className="mt-1 rounded-full bg-brand px-4 py-2.5 text-center text-sm font-bold text-primary-foreground"
             >
-              Request Quote
+              Get a Quote
             </Link>
           </div>
         </div>

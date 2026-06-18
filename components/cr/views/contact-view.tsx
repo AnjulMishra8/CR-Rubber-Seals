@@ -1,31 +1,45 @@
 'use client'
 
 import { useState } from 'react'
-import { company, inquiryProductCategories } from '@/lib/site-content'
+import { company, inquiryProductCategories, findUsOptions } from '@/lib/site-content'
 import { LucideIcon } from '@/components/cr/lucide-icon'
+import { LinkedinIcon, InstagramIcon, YoutubeIcon } from '@/components/cr/brand-icons'
 
 const field =
   'w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm text-ink outline-none focus:border-brand focus:ring-1 focus:ring-brand'
 const label = 'mb-1.5 block text-[11px] font-bold tracking-[0.12em] text-muted-foreground'
 
+const phoneHref = `tel:${company.phone.replace(/\s/g, '')}`
+
 const contactCards = [
   {
+    icon: 'MapPin',
+    title: 'Factory & Registered Address',
+    lines: [company.addressFull],
+  },
+  {
     icon: 'Phone',
-    title: 'Call Us',
-    lines: [company.phone, company.phoneAlt],
-    hrefs: [`tel:${company.phone.replace(/\s/g, '')}`, `tel:${company.phoneAlt.replace(/\s/g, '')}`],
+    title: 'Phone / WhatsApp',
+    lines: [company.phone],
+    hrefs: [phoneHref],
   },
   {
     icon: 'Mail',
-    title: 'Email Us',
-    lines: [company.enquiryEmail, company.directorEmail],
-    hrefs: [`mailto:${company.enquiryEmail}`, `mailto:${company.directorEmail}`],
+    title: 'Email & Website',
+    lines: [company.enquiryEmail, company.website],
+    hrefs: [`mailto:${company.enquiryEmail}`, `https://${company.website}`],
   },
   {
-    icon: 'MapPin',
-    title: 'Visit Us',
-    lines: [company.addressFull],
+    icon: 'Clock',
+    title: 'Business Hours',
+    lines: [company.businessHours],
   },
+]
+
+const socials = [
+  { icon: LinkedinIcon, label: 'LinkedIn', href: company.social.linkedin },
+  { icon: InstagramIcon, label: 'Instagram', href: company.social.instagram },
+  { icon: YoutubeIcon, label: 'YouTube', href: company.social.youtube },
 ]
 
 export function ContactView() {
@@ -39,11 +53,12 @@ export function ContactView() {
             Get In Touch
           </p>
           <h1 className="max-w-3xl font-serif text-4xl font-bold tracking-tight text-balance sm:text-5xl">
-            Let&apos;s Engineer Your Sealing Solution
+            Contact Us / Get a Quote
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
-            Whether you need a standard catalogue seal or a fully custom profile, our team is ready
-            to help. Reach out for technical consultation, quotations and sample requests.
+            Whether you need a standard seal or a custom solution machined to your exact
+            specification — we&apos;re here to help. Fill in the enquiry form below or reach us
+            directly. We respond within hours, not days.
           </p>
         </div>
       </section>
@@ -58,7 +73,7 @@ export function ContactView() {
                   <div className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-accent text-brand">
                     <LucideIcon name={card.icon} className="size-5" />
                   </div>
-                  <h3 className="font-serif text-lg font-bold text-ink">{card.title}</h3>
+                  <h3 className="font-serif text-base font-bold text-ink">{card.title}</h3>
                 </div>
                 <div className="mt-4 space-y-1.5">
                   {card.lines.map((line, i) =>
@@ -66,7 +81,7 @@ export function ContactView() {
                       <a
                         key={line}
                         href={card.hrefs[i]}
-                        className="block text-sm text-ink/80 transition-colors hover:text-brand"
+                        className="block text-sm leading-relaxed text-ink/80 transition-colors hover:text-brand"
                       >
                         {line}
                       </a>
@@ -80,6 +95,23 @@ export function ContactView() {
               </div>
             ))}
 
+            <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+              <div className="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <p className="text-[10px] font-bold tracking-[0.12em] text-muted-foreground">
+                    GSTIN
+                  </p>
+                  <p className="mt-1 font-mono text-xs font-semibold text-ink">{company.gstin}</p>
+                </div>
+                <div>
+                  <p className="text-[10px] font-bold tracking-[0.12em] text-muted-foreground">
+                    IEC
+                  </p>
+                  <p className="mt-1 font-mono text-xs font-semibold text-ink">{company.iec}</p>
+                </div>
+              </div>
+            </div>
+
             <a
               href={`https://wa.me/${company.whatsapp}`}
               target="_blank"
@@ -89,6 +121,21 @@ export function ContactView() {
               <LucideIcon name="MessageCircle" className="size-5" />
               Chat on WhatsApp
             </a>
+
+            <div className="flex items-center gap-3">
+              {socials.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className="flex size-11 items-center justify-center rounded-lg border border-border bg-card text-ink transition-colors hover:border-brand hover:text-brand"
+                >
+                  <s.icon className="size-5" />
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Form */}
@@ -99,17 +146,17 @@ export function ContactView() {
                   <div className="flex size-14 items-center justify-center rounded-full bg-whatsapp/10 text-whatsapp">
                     <LucideIcon name="CheckCircle2" className="size-8" />
                   </div>
-                  <h3 className="mt-4 font-serif text-2xl font-bold text-ink">Message Sent</h3>
+                  <h3 className="mt-4 font-serif text-2xl font-bold text-ink">Enquiry Sent</h3>
                   <p className="mt-2 max-w-sm text-muted-foreground">
-                    Thank you for reaching out. Our team will respond to your enquiry within one
-                    business day.
+                    Thank you for reaching out. Our team will respond to your enquiry within hours,
+                    not days.
                   </p>
                   <button
                     type="button"
                     onClick={() => setSent(false)}
                     className="mt-6 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand"
                   >
-                    Send Another Message
+                    Send Another Enquiry
                   </button>
                 </div>
               ) : (
@@ -119,27 +166,39 @@ export function ContactView() {
                     setSent(true)
                   }}
                 >
-                  <h2 className="font-serif text-2xl font-bold text-ink">Send Us a Message</h2>
+                  <h2 className="font-serif text-2xl font-bold text-ink">Send Us an Enquiry</h2>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    Fill out the form and our engineering team will get back to you.
+                    Fill out the form and our team will get back to you.
                   </p>
 
                   <div className="mt-6 grid gap-5 sm:grid-cols-2">
                     <div>
                       <label className={label} htmlFor="name">
-                        FULL NAME *
+                        YOUR NAME *
                       </label>
                       <input id="name" required className={field} placeholder="Your name" />
                     </div>
                     <div>
-                      <label className={label} htmlFor="company">
-                        COMPANY
+                      <label className={label} htmlFor="phone">
+                        PHONE NUMBER *
                       </label>
-                      <input id="company" className={field} placeholder="Company name" />
+                      <input id="phone" required className={field} placeholder="+91 ..." />
+                    </div>
+                    <div>
+                      <label className={label} htmlFor="company">
+                        COMPANY NAME *
+                      </label>
+                      <input id="company" required className={field} placeholder="Company name" />
+                    </div>
+                    <div>
+                      <label className={label} htmlFor="position">
+                        POSITION / FIELD
+                      </label>
+                      <input id="position" className={field} placeholder="Your role / field" />
                     </div>
                     <div>
                       <label className={label} htmlFor="email">
-                        EMAIL *
+                        EMAIL ADDRESS *
                       </label>
                       <input
                         id="email"
@@ -150,16 +209,10 @@ export function ContactView() {
                       />
                     </div>
                     <div>
-                      <label className={label} htmlFor="phone">
-                        PHONE
-                      </label>
-                      <input id="phone" className={field} placeholder="+91 ..." />
-                    </div>
-                    <div className="sm:col-span-2">
                       <label className={label} htmlFor="category">
-                        PRODUCT CATEGORY
+                        PRODUCT / CATEGORY REQUIRED *
                       </label>
-                      <select id="category" className={field} defaultValue="">
+                      <select id="category" required className={field} defaultValue="">
                         <option value="" disabled>
                           Select a category
                         </option>
@@ -172,15 +225,30 @@ export function ContactView() {
                     </div>
                     <div className="sm:col-span-2">
                       <label className={label} htmlFor="message">
-                        MESSAGE *
+                        ENQUIRY DETAILS *
                       </label>
                       <textarea
                         id="message"
                         required
                         rows={5}
                         className={field}
-                        placeholder="Tell us about your application, sizes, materials and quantities..."
+                        placeholder="Size, material, quantity, application and urgency..."
                       />
+                    </div>
+                    <div className="sm:col-span-2">
+                      <label className={label} htmlFor="source">
+                        HOW DID YOU FIND US?
+                      </label>
+                      <select id="source" className={field} defaultValue="">
+                        <option value="" disabled>
+                          Select an option (optional)
+                        </option>
+                        {findUsOptions.map((o) => (
+                          <option key={o} value={o}>
+                            {o}
+                          </option>
+                        ))}
+                      </select>
                     </div>
                   </div>
 
@@ -189,7 +257,7 @@ export function ContactView() {
                     className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-7 py-3 text-sm font-bold text-primary-foreground transition-colors hover:bg-brand-dark sm:w-auto"
                   >
                     <LucideIcon name="Send" className="size-4" />
-                    Send Message
+                    Submit Enquiry
                   </button>
                 </form>
               )}
@@ -200,7 +268,7 @@ export function ContactView() {
         {/* Map */}
         <div className="mt-12 overflow-hidden rounded-xl border border-border shadow-sm">
           <iframe
-            title="CR Rubber & Seals location"
+            title="CR Rubber and Seals location"
             className="h-[360px] w-full"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

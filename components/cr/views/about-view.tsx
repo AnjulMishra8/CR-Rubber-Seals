@@ -1,5 +1,11 @@
 import { timeline } from '@/lib/site-data'
-import { company, corporateProfile, capabilities } from '@/lib/site-content'
+import {
+  company,
+  crAdvantage,
+  manufacturingCapabilities,
+  qualityCompliance,
+  directors,
+} from '@/lib/site-content'
 import { SectionHeading } from '@/components/cr/product-card'
 import { LucideIcon } from '@/components/cr/lucide-icon'
 
@@ -10,62 +16,60 @@ export function AboutView() {
       <section className="bg-ink text-white">
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pb-20 lg:pt-32">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-            Our Story
+            About Us
           </p>
           <h1 className="max-w-3xl font-serif text-4xl font-bold tracking-tight text-balance sm:text-5xl">
-            Three Decades of Sealing Excellence
+            Same Legacy. New Identity. Total Sealing Solutions.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
-            Founded in 1995 in Navi Mumbai, CR Rubber &amp; Seals Private Limited has grown into
-            one of India&apos;s most trusted manufacturers, exporters and suppliers of precision
-            seals and rubber products — serving 12+ industries with 100+ product types.
+            CR Rubber and Seals Private Limited is the sister company of Crown Rubber Works — a
+            name synonymous with sealing excellence since 1995.
           </p>
         </div>
       </section>
 
-      {/* Intro + profile */}
+      {/* Our Story */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-5">
           <div className="lg:col-span-3">
             <SectionHeading
               align="left"
-              eyebrow="WHO WE ARE"
-              title="Engineering Trust, One Seal at a Time"
+              eyebrow="OUR STORY"
+              title="CR Rubber and Seals — Sister Company of Crown Rubber Works"
             />
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Under the leadership of our director Mr. Anis Ansari, CR Rubber &amp; Seals began
-                with a clear mission — to manufacture world-class sealing solutions that meet the
-                most demanding industrial requirements. Today we operate a modern manufacturing
-                facility equipped with CNC seal manufacturing machines, in-house rubber compounding,
-                and a dedicated R&amp;D center.
+                CR Rubber and Seals Private Limited is the sister company of Crown Rubber Works — a
+                name that has been synonymous with sealing excellence since 1995. Founded and
+                managed by the same team, operating from the same manufacturing facility at Pawane
+                MIDC, Navi Mumbai, CR Rubber and Seals Pvt. Ltd. carries forward the full product
+                range, technical expertise, and quality standards of the Crown Rubber Works group —
+                under a distinct private limited identity.
               </p>
               <p>
-                Our ISO 9001:2015 certified quality management system ensures every product meets
-                international standards. We source premium raw materials from Austria, Taiwan,
-                Turkey, Italy and Singapore, and export to Gulf countries, Singapore and Sri Lanka.
-              </p>
-              <p>
-                Our pioneering &ldquo;One Hour Seal Factory&rdquo; brings custom-made machined seals
-                to market with no tooling cost and no minimum order quantity — an express service
-                built for repair and maintenance needs across industries.
+                Both companies are led by Director Mr. Mohammad Anis Ansari and share the same
+                certifications, manufacturing infrastructure, and global supply chain. CR Rubber and
+                Seals Pvt. Ltd. has its own ISO 9001:2015 certification (Certificate No:
+                CCPL/QMS/D1131, valid to 2029), its own IEC import-export registration (AAMCC7518G),
+                and its own GST registration (27AAMCC7518G1ZF) — giving clients full compliance and
+                documentation under this entity.
               </p>
             </div>
           </div>
 
           <aside className="lg:col-span-2">
             <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
-              <h3 className="font-serif text-lg font-bold text-ink">Corporate Profile</h3>
-              <dl className="mt-4 divide-y divide-border">
-                {corporateProfile.map((row) => (
-                  <div key={row.label} className="flex items-start justify-between gap-4 py-3">
-                    <dt className="text-[11px] font-bold tracking-[0.12em] text-muted-foreground">
-                      {row.label}
-                    </dt>
-                    <dd className="text-right text-sm font-semibold text-ink">{row.value}</dd>
-                  </div>
+              <h3 className="font-serif text-lg font-bold text-ink">The CR Advantage</h3>
+              <ol className="mt-4 space-y-3">
+                {crAdvantage.map((item, idx) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-brand font-mono text-xs font-bold text-primary-foreground">
+                      {String(idx + 1).padStart(2, '0')}
+                    </span>
+                    <span className="pt-1 text-sm font-semibold text-ink">{item}</span>
+                  </li>
                 ))}
-              </dl>
+              </ol>
             </div>
           </aside>
         </div>
@@ -75,9 +79,9 @@ export function AboutView() {
       <section className="bg-muted/60 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="OUR JOURNEY"
+            eyebrow="COMPANY TIMELINE"
             title="Milestones That Shaped Us"
-            description="From a focused rubber components manufacturer to a full-spectrum sealing solutions provider."
+            description="From the founding of Crown Rubber Works to the establishment of CR Rubber and Seals Pvt. Ltd."
           />
           <ol className="mt-12 space-y-8 border-l-2 border-border pl-6 sm:mx-auto sm:max-w-3xl">
             {timeline.map((item, idx) => (
@@ -104,32 +108,71 @@ export function AboutView() {
       {/* Capabilities */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="WHAT WE DO BEST"
-          title="Manufacturing Capabilities"
-          description="Vertically integrated capabilities that let us deliver precision, speed and flexibility."
+          eyebrow="OUR CAPABILITIES"
+          title="Manufacturing & Quality"
+          description="Vertically integrated capabilities that let us deliver precision, speed and full compliance."
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2">
-          {capabilities.map((cap) => (
-            <div
-              key={cap.title}
-              className="flex gap-4 rounded-xl border border-border bg-card p-6 shadow-sm"
-            >
-              <div className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-accent text-brand">
-                <LucideIcon name={cap.icon} className="size-6" />
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+          <div className="rounded-xl border border-border bg-card p-7 shadow-sm">
+            <div className="flex items-center gap-3">
+              <div className="flex size-11 items-center justify-center rounded-lg bg-accent text-brand">
+                <LucideIcon name="Cog" className="size-6" />
               </div>
-              <div>
-                <h3 className="font-serif text-lg font-bold text-ink">{cap.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {cap.description}
-                </p>
-              </div>
+              <h3 className="font-serif text-lg font-bold text-ink">Manufacturing Capabilities</h3>
             </div>
-          ))}
+            <ul className="mt-5 space-y-3">
+              {manufacturingCapabilities.map((cap) => (
+                <li key={cap} className="flex items-start gap-3 text-sm text-ink/80">
+                  <LucideIcon name="BadgeCheck" className="mt-0.5 size-4 shrink-0 text-brand" />
+                  {cap}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="rounded-xl border border-border bg-card p-7 shadow-sm">
+            <div className="flex items-center gap-3">
+              <div className="flex size-11 items-center justify-center rounded-lg bg-accent text-brand">
+                <LucideIcon name="ShieldCheck" className="size-6" />
+              </div>
+              <h3 className="font-serif text-lg font-bold text-ink">Quality & Compliance</h3>
+            </div>
+            <ul className="mt-5 space-y-3">
+              {qualityCompliance.map((cap) => (
+                <li key={cap} className="flex items-start gap-3 text-sm text-ink/80">
+                  <LucideIcon name="BadgeCheck" className="mt-0.5 size-4 shrink-0 text-brand" />
+                  {cap}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Directors */}
+      <section className="bg-muted/60 py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading eyebrow="LEADERSHIP" title="Our Directors" />
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {directors.map((d) => (
+              <div key={d.name} className="rounded-xl border border-border bg-card p-7 shadow-sm">
+                <div className="flex items-center gap-4">
+                  <div className="flex size-14 shrink-0 items-center justify-center rounded-full bg-accent text-brand">
+                    <LucideIcon name="User" className="size-7" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-lg font-bold text-ink">{d.name}</h3>
+                    <p className="text-sm font-semibold text-brand">{d.role}</p>
+                  </div>
+                </div>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{d.bio}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Address strip */}
-      <section className="border-t border-border bg-muted/60 py-10">
+      <section className="border-t border-border bg-background py-10">
         <div className="mx-auto flex max-w-7xl flex-col items-start gap-4 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <div className="flex items-start gap-3">
             <LucideIcon name="MapPin" className="mt-1 size-5 shrink-0 text-brand" />

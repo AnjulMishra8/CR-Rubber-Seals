@@ -14,8 +14,9 @@ export function IndustriesView() {
             Sealing Solutions for Every Sector
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
-            From hydraulics and automotive to food processing and pharmaceuticals, our seals are
-            engineered to meet the precise challenges, standards and materials each industry demands.
+            Our sealing solutions power operations across India&apos;s most demanding industrial
+            sectors. We have in-depth understanding of each industry&apos;s unique requirements —
+            enabling us to recommend and supply the most suitable sealing solutions.
           </p>
         </div>
       </section>
@@ -38,39 +39,18 @@ export function IndustriesView() {
                 {ind.description}
               </p>
 
-              <dl className="mt-5 space-y-3 text-sm">
-                <div>
-                  <dt className="text-[11px] font-bold tracking-[0.12em] text-brand">
-                    KEY CHALLENGES
-                  </dt>
-                  <dd className="mt-1 text-ink/80">{ind.keyChallenges}</dd>
-                </div>
-                <div>
-                  <dt className="text-[11px] font-bold tracking-[0.12em] text-brand">
-                    SOLUTIONS PROVIDED
-                  </dt>
-                  <dd className="mt-1 text-ink/80">{ind.solutionsProvided}</dd>
-                </div>
-              </dl>
-
-              <div className="mt-5 flex flex-wrap gap-2">
-                {ind.recommendedMaterials.map((m) => (
-                  <span
-                    key={m}
-                    className="rounded-full border border-border bg-muted px-2.5 py-1 text-[11px] font-semibold text-ink/70"
-                  >
-                    {m}
-                  </span>
-                ))}
-              </div>
-
-              <div className="mt-4 border-t border-border pt-4">
-                <p className="text-[11px] font-bold tracking-[0.12em] text-muted-foreground">
-                  STANDARDS COMPLIED
+              <div className="mt-5 border-t border-border pt-4">
+                <p className="text-[11px] font-bold tracking-[0.12em] text-brand">
+                  KEY PRODUCTS FOR THIS SECTOR
                 </p>
-                <p className="mt-1 font-mono text-xs text-ink/70">
-                  {ind.standardsComplied.join('  •  ')}
-                </p>
+                <ul className="mt-3 space-y-2">
+                  {ind.keyProducts.map((p) => (
+                    <li key={p} className="flex items-start gap-2.5 text-sm text-ink/80">
+                      <LucideIcon name="BadgeCheck" className="mt-0.5 size-4 shrink-0 text-brand" />
+                      {p}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </article>
           ))}
