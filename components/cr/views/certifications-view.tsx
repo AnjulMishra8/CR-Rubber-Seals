@@ -61,13 +61,16 @@ export function CertificationsView() {
                       </div>
                     ))}
                   </dl>
-                  <button
-                    type="button"
+                  <a
+                    href={cert.file}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mt-6 inline-flex items-center justify-center gap-2 rounded-full border border-border bg-muted px-4 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand"
                   >
                     <LucideIcon name="Download" className="size-4" />
                     {cert.downloadLabel}
-                  </button>
+                  </a>
                 </div>
               </article>
             ))}
