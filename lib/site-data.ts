@@ -241,6 +241,7 @@ export const products = [
     id: 'machined-seals',
     title: 'Machined Seals',
     category: 'Machined Seals',
+    image: '/images/machined-seals.png',
     tagline: 'CNC-machined custom seals — no tooling cost, no MOQ.',
     description:
       'One of our flagship capabilities — precision CNC-machined sealing solutions for the most demanding applications, with no tooling cost and no minimum order requirement.',
@@ -257,6 +258,7 @@ export const products = [
     id: 'seal-kits',
     title: 'Seal Kits',
     category: 'Seal Kits',
+    image: '/images/seal-kits.png',
     tagline: 'OEM-interchangeable kits for construction, mining & excavation.',
     description:
       'Complete seal kits directly interchangeable with OEM components for all major construction, mining and excavation equipment brands — ensuring fast maintenance turnaround on site.',
@@ -272,6 +274,7 @@ export const products = [
     id: 'o-rings',
     title: 'O-Rings',
     category: 'O-Rings',
+    image: '/images/o-rings.png',
     tagline: 'Any elastomer, any size — standard and non-standard.',
     description:
       'O-rings in any elastomeric material to any customer specification — standard and non-standard sizes, in all major ring profiles for static and dynamic sealing applications.',
@@ -288,6 +291,7 @@ export const products = [
     id: 'hydraulic-seals',
     title: 'Hydraulic Seals',
     category: 'Hydraulic Seals',
+    image: '/images/hydraulic-seals.png',
     tagline: '50+ profiles, pressures up to 700 bar.',
     description:
       'Our hydraulic seals cover every position in a hydraulic cylinder — piston, rod, wiper and guide — available in 50+ standard profiles across all materials and pressures up to 700 bar.',
@@ -303,6 +307,7 @@ export const products = [
     id: 'pneumatic-seals',
     title: 'Pneumatic Seals',
     category: 'Pneumatic Seals',
+    image: '/images/pneumatic-seals.png',
     tagline: 'Rotary shaft oil seals, fabric oil seals & V-rings.',
     description:
       'Covers rotary shaft oil seals, fabric oil seals and V-rings for high-speed, contamination-sensitive and heavy-duty rotating shaft applications across all industries.',
@@ -318,6 +323,7 @@ export const products = [
     id: 'moulded-rubber',
     title: 'Moulded Rubber Parts',
     category: 'Moulded Rubber',
+    image: '/images/moulded-rubber-parts.png',
     tagline: 'Custom compression-moulded components to exact spec.',
     description:
       'With in-house rubber compounding and CNC mould manufacturing, we produce custom moulded rubber components to exact client specifications — from simple gaskets to complex multi-insert mouldings.',
