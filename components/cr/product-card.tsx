@@ -15,8 +15,17 @@ export function ProductCard({
   return (
     <article className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-slate-100 bg-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">
       <div>
-        <div className="relative flex h-48 select-none flex-col items-center justify-center border-b border-slate-100 bg-slate-100 p-6">
-          <div className="industrial-grid absolute inset-0 opacity-20" />
+        <div className="relative flex h-48 select-none flex-col items-center justify-center overflow-hidden border-b border-slate-100 bg-slate-100">
+          {product.image ? (
+            <img
+              src={product.image || "/placeholder.svg"}
+              alt={product.title}
+              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+            />
+          ) : (
+            <div className="industrial-grid absolute inset-0 opacity-20" />
+          )}
           <span className="absolute bottom-2.5 left-3.5 rounded-full bg-slate-900/90 px-3 py-1 text-[9px] font-bold uppercase tracking-wider text-white backdrop-blur-sm">
             {product.category}
           </span>
