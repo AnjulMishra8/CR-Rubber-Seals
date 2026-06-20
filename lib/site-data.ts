@@ -78,7 +78,7 @@ export const certifications = [
     ],
     downloadLabel: 'Download ISO 9001:2015 Certificate (PDF)',
     file: '/certificates/iso-9001-certificate.pdf',
-    preview: '/images/iso-9001-preview.png',
+    preview: '/images/iso-9001-preview.jpg',
   },
   {
     id: 'iec',
@@ -100,7 +100,7 @@ export const certifications = [
     ],
     downloadLabel: 'Download IEC Certificate (PDF)',
     file: '/certificates/iec-certificate.pdf',
-    preview: '/images/iec-preview.png',
+    preview: '/images/iec-preview.jpg',
   },
   {
     id: 'gst',
@@ -121,7 +121,7 @@ export const certifications = [
     ],
     downloadLabel: 'Download GST Certificate (PDF)',
     file: '/certificates/gst-certificate.pdf',
-    preview: '/images/gst-preview.png',
+    preview: '/images/gst-preview.jpg',
   },
   {
     id: 'fieo',
@@ -143,7 +143,7 @@ export const certifications = [
     ],
     downloadLabel: 'Download FIEO Certificate (PDF)',
     file: '/certificates/fieo-certificate.pdf',
-    preview: '/images/fieo-preview.png',
+    preview: '/images/fieo-preview.jpg',
   },
   {
     id: 'udyam',
@@ -162,7 +162,7 @@ export const certifications = [
     ],
     downloadLabel: 'Download Udyam Certificate (PDF)',
     file: '/certificates/udyam-certificate.pdf',
-    preview: '/images/udyam-preview.png',
+    preview: '/images/udyam-preview.jpg',
   },
 ] as const
 
