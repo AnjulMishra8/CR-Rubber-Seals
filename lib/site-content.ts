@@ -21,7 +21,7 @@ export const company = {
   addressShort: 'W 10, TTC Industrial Area, Pawane MIDC,\nTurbhe, Navi Mumbai - 400705, Maharashtra',
   addressFull:
     'W 10, TTC Industrial Area, Pawane MIDC, Turbhe, Navi Mumbai - 400705, Maharashtra, India',
-  mapQuery: 'TTC Industrial Area Pawane MIDC Turbhe Navi Mumbai 400705',
+  mapQuery: 'W 10, TTC Industrial Area, Pawane MIDC, Turbhe, Navi Mumbai - 400705, Maharashtra, India',
   social: {
     linkedin: 'https://www.linkedin.com/company/CRrubberandseals',
     instagram: 'https://www.instagram.com/CRrubberandseals',
@@ -49,7 +49,7 @@ export const trustBar = [
 // Section 2 — Who We Are
 export const whoWeAre = {
   label: 'WHO WE ARE',
-  heading: 'Total Sealing Solutions — From the Crown Rubber Works Family',
+  heading: 'Precision Sealing Solutions — From the Crown Rubber Works Family',
   body: [
     "CR Rubber and Seals Private Limited is the sister company of Crown Rubber Works — one of India's most trusted names in rubber and PU sealing since 1995. Sharing the same manufacturing facility at Pawane MIDC, Navi Mumbai, the same product range, and the same team of experts, CR Rubber and Seals Pvt. Ltd. carries forward this legacy under a distinct private limited identity — with its own ISO 9001:2015 certification, IEC registration, and GST registration.",
     "CR Rubber and Seals Pvt. Ltd. combines the group's deep industry expertise with compression moulding, CNC precision manufacturing, in-house R&D, and global sourcing partnerships from Austria, Taiwan, Turkey, Italy and Singapore.",
