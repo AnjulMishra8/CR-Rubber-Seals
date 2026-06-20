@@ -412,7 +412,7 @@ export const products = [
   },
 ] as const
 
-export const blogPosts = [{id:"1",title:"Elastomer Selection Guide: Navigating Compound Engineering",slug:"elastomer-selection-guide-navigating-compound-engineering",excerpt:"Selecting the correct rubber compound is crucial for high-pressure industrial sealing. Learn when to choose Viton, NBR, EPDM, or Polyurethane.",content:`
+export const blogPosts = [{id:"1",title:"Elastomer Selection Guide: Navigating Compound Engineering",slug:"elastomer-selection-guide-navigating-compound-engineering",excerpt:"Selecting the correct rubber compound is crucial for high-pressure industrial sealing. Learn when to choose Viton, NBR, EPDM, or Polyurethane.",image:"/images/blog-elastomer-selection.jpg",content:`
 # Elastomer Selection Guide: Navigating Compound Engineering
 
 In industrial sealing, specifying the correct elastomer compound is the difference between seamless machine operations and catastrophic system failure. When designing seals, engineers must evaluate chemical exposure, thermal limits, mechanical loads, and pressure spikes. 
@@ -454,7 +454,7 @@ PU is highly prized for its mechanical strength, abrasion resistance, and outsta
 * **Standard Hydraulic Oil:** Use **Nitrile (NBR)**
 
 Selecting the correct compound extends seal lifespan, reduces machine downtime, and optimizes system efficiency. Contact our engineering desk at CR Rubber and Seals for custom compound formulations.
-`,publishedAt:"May 28, 2026",readTime:"5 min read",category:"Engineering Research",author:"Mr. Anis Ansari"},{id:"2",title:"Unlocking Efficiency with CNC Custom Machined Seals",slug:"unlocking-efficiency-with-cnc-custom-machined-seals",excerpt:"How CNC seal manufacturing enables custom seals in under 1 hour with zero tooling costs and no minimum order quantity (MOQ).",content:`
+`,publishedAt:"May 28, 2026",readTime:"5 min read",category:"Engineering Research",author:"Mr. Anis Ansari"},{id:"2",title:"Unlocking Efficiency with CNC Custom Machined Seals",slug:"unlocking-efficiency-with-cnc-custom-machined-seals",excerpt:"How CNC seal manufacturing enables custom seals in under 1 hour with zero tooling costs and no minimum order quantity (MOQ).",image:"/images/blog-cnc-machining.jpg",content:`
 # Unlocking Efficiency with CNC Custom Machined Seals
 
 Historically, custom rubber seals required designing and casting a dedicated metal compression mold. This process frequently took weeks and cost thousands of dollars, making prototyping or small-batch runs prohibitively expensive.
@@ -494,7 +494,7 @@ At CR Rubber and Seals, our in-house CNC toolroom enables us to produce customiz
 * **Emergency Breakdowns:** When an old, obsolete seal fails and must be replaced immediately.
 * **Custom Dimensions:** When rebuilding machinery that has been re-bored to non-standard dimensions.
 * **Prototyping:** Testing new cylinder designs before committing to expensive production molds.
-`,publishedAt:"May 15, 2026",readTime:"4 min read",category:"Manufacturing Technology",author:"Engineering Desk"},{id:"3",title:"Understanding ISO 3302-1 Tolerances in Rubber Manufacturing",slug:"understanding-iso-3302-1-tolerances-in-rubber-manufacturing",excerpt:"A deep-dive into the ISO 3302-1 dimensional tolerance standard, detailing M1, M2, and M3 classes for precision molded and extruded rubber.",content:`
+`,publishedAt:"May 15, 2026",readTime:"4 min read",category:"Manufacturing Technology",author:"Engineering Desk"},{id:"3",title:"Understanding ISO 3302-1 Tolerances in Rubber Manufacturing",slug:"understanding-iso-3302-1-tolerances-in-rubber-manufacturing",excerpt:"A deep-dive into the ISO 3302-1 dimensional tolerance standard, detailing M1, M2, and M3 classes for precision molded and extruded rubber.",image:"/images/blog-iso-tolerances.jpg",content:`
 # Understanding ISO 3302-1 Tolerances in Rubber Manufacturing
 
 Unlike metal components, rubber parts are flexible, compress under force, and expand or contract based on compound formulation, curing temperature, and humidity. As a result, standard steel tolerances cannot be applied to elastomeric parts.
