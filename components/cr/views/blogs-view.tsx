@@ -55,8 +55,18 @@ export function BlogsView() {
               key={post.id}
               className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-shadow hover:shadow-lg"
             >
-              <div className="flex h-40 items-center justify-center border-b border-border bg-ink">
-                <LucideIcon name="FileText" className="size-12 text-primary/80" />
+              <div className="relative h-40 overflow-hidden border-b border-border bg-ink">
+                {post.image ? (
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="flex h-full items-center justify-center bg-ink">
+                    <LucideIcon name="FileText" className="size-12 text-primary/80" />
+                  </div>
+                )}
               </div>
               <div className="flex flex-1 flex-col p-6">
                 <span className="inline-flex w-fit rounded bg-accent px-2.5 py-1 text-[10px] font-bold tracking-[0.12em] text-brand">
