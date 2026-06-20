@@ -78,6 +78,7 @@ export const certifications = [
     ],
     downloadLabel: 'Download ISO 9001:2015 Certificate (PDF)',
     file: '/certificates/iso-9001-certificate.pdf',
+    preview: '/images/iso-9001-preview.png',
   },
   {
     id: 'iec',
@@ -99,6 +100,7 @@ export const certifications = [
     ],
     downloadLabel: 'Download IEC Certificate (PDF)',
     file: '/certificates/iec-certificate.pdf',
+    preview: '/images/iec-preview.png',
   },
   {
     id: 'gst',
@@ -119,6 +121,48 @@ export const certifications = [
     ],
     downloadLabel: 'Download GST Certificate (PDF)',
     file: '/certificates/gst-certificate.pdf',
+    preview: '/images/gst-preview.png',
+  },
+  {
+    id: 'fieo',
+    title: 'FIEO Export Registration',
+    icon: 'Globe',
+    number: 'RCMC/FIEO/16904/2026-2027',
+    summary:
+      'Federation of Indian Exporters Organisation (FIEO) membership certificate recognizing CR Rubber and Seals as a Merchant Cum Manufacturer Exporter under the Foreign Trade Policy of Government of India.',
+    details: [
+      ['Registration Number', 'RCMC/FIEO/16904/2026-2027'],
+      ['Registered As', 'Merchant Cum Manufacturer Exporter'],
+      ['IEC Number', 'AAMCC7518G'],
+      ['Valid Until', '31/03/2027'],
+      ['Issue Date', '24/05/2026'],
+      [
+        'Registered Products',
+        'Industrial rubber, polyurethane products, hydraulic & pneumatic seals, custom molded rubber components',
+      ],
+    ],
+    downloadLabel: 'Download FIEO Certificate (PDF)',
+    file: '/certificates/fieo-certificate.pdf',
+    preview: '/images/fieo-preview.png',
+  },
+  {
+    id: 'udyam',
+    title: 'Udyam Registration (MSME)',
+    icon: 'Award',
+    number: 'UDYAM-MH-33-0776310',
+    summary:
+      'Udyam Registration Certificate recognizing CR Rubber and Seals as a Micro Enterprise under the MSME scheme of the Government of India, classified under manufacturing of rubber products.',
+    details: [
+      ['Udyam Registration Number', 'UDYAM-MH-33-0776310'],
+      ['Enterprise Type', 'Micro Enterprise'],
+      ['Major Activity', 'Manufacturing'],
+      ['Registration Date', '23/05/2026'],
+      ['NIC Code', '22199 - Manufacture of other rubber products n.e.c.'],
+      ['Address', 'Shed W 10, TTC Industrial Area, Pawane MIDC, Turbhe, Navi Mumbai - 400705'],
+    ],
+    downloadLabel: 'Download Udyam Certificate (PDF)',
+    file: '/certificates/udyam-certificate.pdf',
+    preview: '/images/udyam-preview.png',
   },
 ] as const
 
