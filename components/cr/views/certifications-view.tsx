@@ -49,7 +49,6 @@ export function CertificationsView() {
                     src={cert.preview}
                     alt={cert.title}
                     className="h-full w-full object-cover"
-                    loading="lazy"
                   />
                 ) : (
                   <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-brand/10 to-brand/5">
