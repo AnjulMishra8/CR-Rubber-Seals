@@ -31,81 +31,37 @@ export function CertificationsView() {
         </div>
       </section>
 
-      {/* Certifications - Thumbnail Grid */}
-      <section className="bg-muted/60 py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="OUR CERTIFICATIONS" title="Certified & Registered" />
-          
-          {/* Thumbnail Cards */}
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
-            {certifications.map((cert) => (
-              <div
-                key={cert.id}
-                className="group flex flex-col overflow-hidden rounded-lg border border-border bg-background shadow-sm transition-all hover:shadow-lg"
-              >
-                {/* Thumbnail Preview */}
-                <div className="relative h-40 w-full overflow-hidden bg-muted">
-                  {cert.preview ? (
-                    <img
-                      src={cert.preview}
-                      alt={cert.title}
-                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      loading="lazy"
-                    />
-                  ) : (
-                    <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-brand/10 to-brand/5">
-                      <LucideIcon
-                        name={cert.icon}
-                        className="size-12 text-brand/50"
-                      />
-                    </div>
-                  )}
-                </div>
 
-                {/* Card Content */}
-                <div className="flex flex-1 flex-col gap-2 p-4">
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-wide text-brand">
-                      {cert.id}
-                    </p>
-                    <h3 className="mt-0.5 font-semibold text-ink line-clamp-2 text-sm">
-                      {cert.title}
-                    </h3>
-                  </div>
 
-                  <p className="text-[11px] text-muted-foreground line-clamp-1">
-                    {cert.number}
-                  </p>
-
-                  {/* Download Button */}
-                  <div className="mt-auto pt-1">
-                    <a
-                      href={cert.file}
-                      download
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex w-full items-center justify-center gap-1 rounded-md bg-brand/10 px-2 py-1.5 text-[11px] font-semibold text-brand transition-colors hover:bg-brand/20"
-                    >
-                      <LucideIcon name="Download" className="size-3" />
-                      Download
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Detailed Certifications */}
+      {/* Certifications */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold text-ink mb-8">Certificate Details</h2>
-        <div className="grid gap-8 lg:grid-cols-2">
+        <SectionHeading eyebrow="OUR CERTIFICATIONS" title="Certified & Registered" />
+        <div className="mt-12 grid gap-8 lg:grid-cols-2">
           {certifications.map((cert) => (
             <article
               key={cert.id}
               className="flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm"
             >
+              {/* PDF Preview */}
+              <div className="relative h-64 w-full overflow-hidden bg-muted/50">
+                {cert.preview ? (
+                  <img
+                    src={cert.preview}
+                    alt={cert.title}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-brand/10 to-brand/5">
+                    <div className="text-center">
+                      <LucideIcon name={cert.icon} className="mx-auto size-16 text-brand/30" />
+                      <p className="mt-3 text-sm text-muted-foreground">Certificate preview</p>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Certificate Details */}
               <div className="flex items-center gap-4 border-b border-border bg-background p-6">
                 <div className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-brand text-primary-foreground">
                   <LucideIcon name={cert.icon} className="size-6" />
@@ -114,6 +70,7 @@ export function CertificationsView() {
                   {cert.title}
                 </h3>
               </div>
+
               <div className="flex flex-1 flex-col p-6">
                 <p className="text-sm leading-relaxed text-muted-foreground">{cert.summary}</p>
                 <dl className="mt-5 divide-y divide-border">
