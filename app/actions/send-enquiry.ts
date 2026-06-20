@@ -5,14 +5,10 @@ import { company } from '@/lib/site-content'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-// Sender: Resend's shared domain works without verification, but it can ONLY
-// deliver to your own Resend account email. Once you verify crrubber.in at
-// resend.com/domains, set ENQUIRY_FROM_EMAIL (e.g. "CR Rubber <enquiry@crrubber.in>")
-// to deliver to any recipient.
-const FROM = process.env.ENQUIRY_FROM_EMAIL || 'CR Rubber Website <onboarding@resend.dev>'
+// Sender: Uses the verified crrubber.in domain
+const FROM = process.env.ENQUIRY_FROM_EMAIL || 'CR Rubber Website <website@crrubber.in>'
 
-// Recipient: defaults to the site enquiry email. Until a domain is verified,
-// set ENQUIRY_TO_EMAIL to your own Resend account email so test sends succeed.
+// Recipient: All enquiries sent to enquiry@crrubber.in with reply-to set to customer email
 const TO = process.env.ENQUIRY_TO_EMAIL || company.enquiryEmail
 
 export type EnquiryResult = { ok: boolean; error?: string }
