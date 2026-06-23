@@ -18,7 +18,7 @@ Pneumatic Seal Manufacturer`,
     title: `Custom Machined Seals
 Up to 1500mm OD`,
     description:
-      'CNC-machined custom seals with 125+ profiles — no tooling cost, no minimum order. Large diameter and TBM seals up to 7500mm.',
+      'CNC-machined custom seals with 500+ profiles — no tooling cost, no minimum order. Large diameter and TBM seals up to 7500mm.',
     badge: 'No Tooling Cost · No MOQ',
     image: '/images/slide-4.png',
   },
