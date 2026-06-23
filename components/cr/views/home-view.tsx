@@ -58,7 +58,7 @@ export function HomeView() {
             <span className="text-xs font-bold tracking-[0.2em] text-brand">
               {whoWeAre.label}
             </span>
-            <h2 className="mt-3 font-sans text-3xl font-bold text-ink text-balance sm:text-4xl">
+            <h2 className="mt-3 whitespace-pre-line font-sans text-3xl font-bold text-ink text-balance sm:text-4xl">
               {whoWeAre.heading}
             </h2>
             {whoWeAre.body.map((para) => (
