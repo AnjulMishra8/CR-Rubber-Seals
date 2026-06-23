@@ -18,7 +18,7 @@ export const company = {
   phone: '+91 9323738055',
   whatsapp: '919323738055',
   businessHours: 'Monday – Saturday: 10:00 AM to 6:00 PM IST',
-  addressShort: 'W 10, TTC Industrial Area, Pawane MIDC,\nTurbhe, Navi Mumbai - 400705, Maharashtra',
+  addressShort: 'W 10, TTC Industrial Area,\nPawane MIDC, Turbhe,\nNavi Mumbai - 400705,\nMaharashtra, India',
   addressFull:
     'W 10, TTC Industrial Area, Pawane MIDC, Turbhe, Navi Mumbai - 400705, Maharashtra, India',
   mapQuery: 'W 10, TTC Industrial Area, Pawane MIDC, Turbhe, Navi Mumbai - 400705, Maharashtra, India',
