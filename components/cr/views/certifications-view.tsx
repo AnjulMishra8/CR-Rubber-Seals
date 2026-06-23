@@ -71,22 +71,12 @@ export function CertificationsView() {
 
               <div className="flex flex-1 flex-col p-6">
                 <p className="text-sm leading-relaxed text-muted-foreground">{cert.summary}</p>
-                <dl className="mt-5 divide-y divide-border">
-                  {cert.details.map(([label, value]) => (
-                    <div key={label} className="py-2.5">
-                      <dt className="text-[10px] font-bold tracking-[0.12em] text-muted-foreground">
-                        {label}
-                      </dt>
-                      <dd className="mt-0.5 text-sm font-medium text-ink">{value}</dd>
-                    </div>
-                  ))}
-                </dl>
                 <a
                   href={cert.file}
                   download
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center justify-center gap-2 rounded-full border border-border bg-muted px-4 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand"
+                  className="mt-auto inline-flex items-center justify-center gap-2 rounded-full border border-border bg-muted px-4 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand"
                 >
                   <LucideIcon name="Download" className="size-4" />
                   {cert.downloadLabel}
