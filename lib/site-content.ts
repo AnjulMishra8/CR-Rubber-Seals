@@ -49,7 +49,7 @@ export const trustBar = [
 // Section 2 — Who We Are
 export const whoWeAre = {
   label: 'WHO WE ARE',
-  heading: 'Precision Sealing Solutions from the Crown Rubber Works Family',
+  heading: 'Precision Sealing Solutions\nfrom the Crown Rubber Works Family',
   body: [
     "CR Rubber and Seals Private Limited is the sister company of Crown Rubber Works, one of India's most trusted names in rubber and PU sealing since 1995. Sharing the same manufacturing facility at Pawane MIDC, Navi Mumbai, the same product range, and the same team of experts, CR Rubber and Seals Pvt. Ltd. carries forward this legacy under a distinct private limited identity with its own ISO 9001:2015 certification, IEC registration, and GST registration.",
     "CR Rubber and Seals Pvt. Ltd. combines the group's deep industry expertise with compression moulding, CNC precision manufacturing, in-house R&D, and global sourcing partnerships from Austria, Taiwan, Turkey, Italy and Singapore.",
