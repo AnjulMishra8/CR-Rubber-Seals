@@ -5,13 +5,14 @@ import { X, Loader2 } from 'lucide-react'
 import { sendQuoteRequest } from '@/app/actions/send-enquiry'
 
 const materials = [
-  'PU Formulation',
-  'NBR Formulation',
-  'FPM / Viton Formulation',
-  'POM Formulation',
-  'PTFE Formulation',
-  'Natural Rubber / SBR Blend',
-  'Technical consultation needed',
+  'Natural Rubber',
+  'EPDM',
+  'Neoprene',
+  'Silicone',
+  'SBR',
+  'Viton/FKM',
+  'PU',
+  'Other',
 ]
 
 const hardness = [
@@ -21,13 +22,7 @@ const hardness = [
   '70 Shore A (Standard seals)',
   '80 Shore A (High pressure)',
   '90 Shore A (Heavy mechanical)',
-]
-
-const certs = [
-  'Standard ISO 9001:2015 Compliance',
-  'ISO 9001:2015 Certificate Attached',
-  'Material Specification Sheet Required',
-  'Physical Test Report Required',
+  'Other',
 ]
 
 const field =
@@ -187,17 +182,6 @@ export function InquiryModal({
               <div>
                 <label className={label}>PURCHASE QUANTITY NEEDED (UNITS)*</label>
                 <input name="quantity" className={field} required />
-              </div>
-              <div>
-                <label className={label}>MATERIAL CERTIFICATIONS REQUIRED</label>
-                <select name="certification" className={field} defaultValue="">
-                  <option value="" disabled>
-                    Select certification
-                  </option>
-                  {certs.map((c) => (
-                    <option key={c}>{c}</option>
-                  ))}
-                </select>
               </div>
             </div>
 
