@@ -22,7 +22,7 @@ export function BlogsView() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
             Knowledge Hub
           </p>
-          <h1 className="max-w-3xl font-serif text-4xl font-bold tracking-tight text-balance sm:text-5xl">
+          <h1 className="max-w-3xl font-sans text-4xl font-bold tracking-tight text-balance sm:text-5xl">
             Engineering Insights &amp; Technical Articles
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
@@ -72,7 +72,7 @@ export function BlogsView() {
                 <span className="inline-flex w-fit rounded bg-accent px-2.5 py-1 text-[10px] font-bold tracking-[0.12em] text-brand">
                   {post.category.toUpperCase()}
                 </span>
-                <h2 className="mt-4 font-serif text-xl font-bold text-ink text-balance">
+                <h2 className="mt-4 font-sans text-xl font-bold text-ink text-balance">
                   <Link href={`/blogs/${post.slug}`} className="transition-colors hover:text-brand">
                     {post.title}
                   </Link>

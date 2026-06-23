@@ -143,7 +143,9 @@
   }
   h1,
   h2,
-  h3,
+  h3 {
+    font-family: var(--font-sans);
+  }
   .font-serif {
     font-family: var(--font-serif);
   }
@@ -179,14 +181,14 @@
   margin-top: 1.1rem;
 }
 .prose-cr h1 {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
   margin-top: 0;
 }
 .prose-cr h2 {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 2rem;
@@ -194,7 +196,7 @@
   border-bottom: 1px solid var(--border);
 }
 .prose-cr h3 {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: 1.5rem;

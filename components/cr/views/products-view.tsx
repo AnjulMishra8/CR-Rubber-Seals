@@ -24,7 +24,7 @@ export function ProductsView() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
             Our Products
           </p>
-          <h1 className="font-serif text-4xl font-bold tracking-tight text-balance sm:text-5xl">
+          <h1 className="font-sans text-4xl font-bold tracking-tight text-balance sm:text-5xl">
             Our Industrial Rubber Products
           </h1>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-slate-300">
@@ -67,7 +67,7 @@ export function ProductsView() {
                   {product.category}
                 </span>
               </div>
-              <h2 className="mt-4 font-serif text-2xl font-bold tracking-tight text-ink">
+              <h2 className="mt-4 font-sans text-2xl font-bold tracking-tight text-ink">
                 {product.title}
               </h2>
               <p className="mt-1 text-sm font-semibold italic text-slate-400">{product.tagline}</p>

@@ -23,7 +23,7 @@ export function BlogDetailView({ post }: { post: Post }) {
           <span className="mt-6 inline-flex w-fit rounded bg-white/10 px-2.5 py-1 text-[10px] font-bold tracking-[0.12em] text-primary">
             {post.category.toUpperCase()}
           </span>
-          <h1 className="mt-4 font-serif text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+          <h1 className="mt-4 font-sans text-3xl font-bold tracking-tight text-balance sm:text-4xl">
             {post.title}
           </h1>
           <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-300">
@@ -45,7 +45,7 @@ export function BlogDetailView({ post }: { post: Post }) {
         </div>
 
         <div className="mt-12 rounded-xl border border-border bg-muted/60 p-6">
-          <h3 className="font-serif text-lg font-bold text-ink">
+          <h3 className="font-sans text-lg font-bold text-ink">
             Need help selecting the right seal?
           </h3>
           <p className="mt-2 text-sm text-muted-foreground">
@@ -65,7 +65,7 @@ export function BlogDetailView({ post }: { post: Post }) {
       {related.length > 0 && (
         <section className="border-t border-border bg-muted/40 py-12">
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-            <h2 className="font-serif text-2xl font-bold text-ink">Related Articles</h2>
+            <h2 className="font-sans text-2xl font-bold text-ink">Related Articles</h2>
             <div className="mt-6 grid gap-6 sm:grid-cols-2">
               {related.map((p) => (
                 <Link
@@ -76,7 +76,7 @@ export function BlogDetailView({ post }: { post: Post }) {
                   <span className="text-[10px] font-bold tracking-[0.12em] text-brand">
                     {p.category.toUpperCase()}
                   </span>
-                  <h3 className="mt-3 font-serif text-lg font-bold text-ink transition-colors group-hover:text-brand">
+                  <h3 className="mt-3 font-sans text-lg font-bold text-ink transition-colors group-hover:text-brand">
                     {p.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.excerpt}</p>

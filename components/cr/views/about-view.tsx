@@ -18,7 +18,7 @@ export function AboutView() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
             About Us
           </p>
-          <h1 className="max-w-3xl font-serif text-4xl font-bold tracking-tight text-balance sm:text-5xl">
+          <h1 className="max-w-3xl font-sans text-4xl font-bold tracking-tight text-balance sm:text-5xl">
             Same Legacy. New Identity. Total Sealing Solutions.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
@@ -59,7 +59,7 @@ export function AboutView() {
 
           <aside className="lg:col-span-2">
             <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
-              <h3 className="font-serif text-lg font-bold text-ink">The CR Advantage</h3>
+              <h3 className="font-sans text-lg font-bold text-ink">The CR Advantage</h3>
               <ol className="mt-4 space-y-3">
                 {crAdvantage.map((item, idx) => (
                   <li key={item} className="flex items-start gap-3">
@@ -92,7 +92,7 @@ export function AboutView() {
                     <span className="rounded bg-accent px-2.5 py-1 font-mono text-sm font-bold text-brand">
                       {item.year}
                     </span>
-                    <h3 className="font-serif text-lg font-bold text-ink">{item.title}</h3>
+                    <h3 className="font-sans text-lg font-bold text-ink">{item.title}</h3>
                   </div>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                     {item.description}
@@ -118,7 +118,7 @@ export function AboutView() {
               <div className="flex size-11 items-center justify-center rounded-lg bg-accent text-brand">
                 <LucideIcon name="Cog" className="size-6" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-ink">Manufacturing Capabilities</h3>
+              <h3 className="font-sans text-lg font-bold text-ink">Manufacturing Capabilities</h3>
             </div>
             <ul className="mt-5 space-y-3">
               {manufacturingCapabilities.map((cap) => (
@@ -134,7 +134,7 @@ export function AboutView() {
               <div className="flex size-11 items-center justify-center rounded-lg bg-accent text-brand">
                 <LucideIcon name="ShieldCheck" className="size-6" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-ink">Quality & Compliance</h3>
+              <h3 className="font-sans text-lg font-bold text-ink">Quality & Compliance</h3>
             </div>
             <ul className="mt-5 space-y-3">
               {qualityCompliance.map((cap) => (
@@ -160,7 +160,7 @@ export function AboutView() {
                     <LucideIcon name="User" className="size-7" />
                   </div>
                   <div>
-                    <h3 className="font-serif text-lg font-bold text-ink">{d.name}</h3>
+                    <h3 className="font-sans text-lg font-bold text-ink">{d.name}</h3>
                     <p className="text-sm font-semibold text-brand">{d.role}</p>
                   </div>
                 </div>

@@ -31,7 +31,7 @@ export function ProductCard({
           </span>
         </div>
         <div className="p-6">
-          <h3 className="font-serif text-xl font-bold tracking-tight text-slate-900 transition-colors group-hover:text-brand">
+          <h3 className="font-sans text-xl font-bold tracking-tight text-slate-900 transition-colors group-hover:text-brand">
             {product.title}
           </h3>
           <p className="mt-1 text-xs font-semibold italic leading-normal text-slate-400">
@@ -72,7 +72,7 @@ export function SectionHeading({
       <span className="text-xs font-bold tracking-[0.2em] text-brand">
         {eyebrow}
       </span>
-      <h2 className="mt-3 font-serif text-3xl font-bold text-ink text-balance sm:text-4xl">
+      <h2 className="mt-3 font-sans text-3xl font-bold text-ink text-balance sm:text-4xl">
         {title}
       </h2>
       {description && (

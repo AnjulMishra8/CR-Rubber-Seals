@@ -11,7 +11,7 @@ export function CertificationsView() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
             Quality &amp; Compliance
           </p>
-          <h1 className="max-w-3xl font-serif text-4xl font-bold tracking-tight text-balance sm:text-5xl">
+          <h1 className="max-w-3xl font-sans text-4xl font-bold tracking-tight text-balance sm:text-5xl">
             Quality Policy &amp; Certifications
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
@@ -65,7 +65,7 @@ export function CertificationsView() {
                 <div className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-brand text-primary-foreground">
                   <LucideIcon name={cert.icon} className="size-6" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-ink text-balance">
+                <h3 className="font-sans text-lg font-bold text-ink text-balance">
                   {cert.title}
                 </h3>
               </div>
@@ -114,7 +114,7 @@ export function CertificationsView() {
               <span className="inline-flex items-center rounded-full bg-accent px-3 py-1 font-mono text-xs font-bold text-brand">
                 {stage.step}
               </span>
-              <h3 className="mt-4 font-serif text-lg font-bold text-ink">{stage.title}</h3>
+              <h3 className="mt-4 font-sans text-lg font-bold text-ink">{stage.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {stage.description}
               </p>
