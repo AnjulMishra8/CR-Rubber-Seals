@@ -4,7 +4,7 @@
 export const company = {
   name: 'CR Rubber and Seals Private Limited',
   shortName: 'CR Rubber and Seals',
-  tagline: 'Total Sealing Solutions',
+  tagline: 'Precision Sealing Solutions',
   sisterCompany: 'Crown Rubber Works',
   founded: '1995',
   director: 'Mohammad Anis Ansari',
@@ -68,7 +68,7 @@ export const usps = [
     icon: 'Timer',
     title: 'One Hour Seal Factory',
     description:
-      'Custom machined seals — 125+ profiles, no tooling cost, no minimum order.',
+      'Custom machined seals — 500+ profiles, no tooling cost, no minimum order.',
   },
   {
     icon: 'FlaskConical',
@@ -88,7 +88,7 @@ export const productRange = [
   {
     title: 'Machined Seals',
     blurb:
-      'CNC-machined custom seals up to 1500mm OD — 125+ profiles, no tooling cost, no MOQ. Meander springs, large diameter & TBM seals.',
+      'CNC-machined custom seals up to 1500mm OD — 500+ profiles, no tooling cost, no MOQ. Meander springs, large diameter & TBM seals.',
     category: 'Machined Seals',
   },
   {

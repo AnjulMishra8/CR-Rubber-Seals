@@ -44,7 +44,7 @@ export function Footer() {
             Backed by 30 years of group expertise.
           </p>
           <div className="mt-4 inline-block rounded border border-white/10 bg-white/5 px-3 py-1.5 text-[10px] font-bold tracking-[0.15em] text-brand">
-            TOTAL SEALING SOLUTIONS
+            PRECISION SEALING SOLUTIONS
           </div>
         </div>
 
