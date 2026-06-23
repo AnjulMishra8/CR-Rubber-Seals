@@ -112,23 +112,6 @@ export function ContactView() {
               </div>
             ))}
 
-            <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
-              <div className="grid grid-cols-2 gap-4 text-sm">
-                <div>
-                  <p className="text-[10px] font-bold tracking-[0.12em] text-muted-foreground">
-                    GSTIN
-                  </p>
-                  <p className="mt-1 font-mono text-xs font-semibold text-ink">{company.gstin}</p>
-                </div>
-                <div>
-                  <p className="text-[10px] font-bold tracking-[0.12em] text-muted-foreground">
-                    IEC
-                  </p>
-                  <p className="mt-1 font-mono text-xs font-semibold text-ink">{company.iec}</p>
-                </div>
-              </div>
-            </div>
-
             <a
               href={`https://wa.me/${company.whatsapp}`}
               target="_blank"
