@@ -15,8 +15,7 @@ export function CertificationsView() {
             Quality Policy &amp; Certifications
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
-            Stringent multi-stage quality control from raw material to dispatch, backed by
-            ISO 9001:2015 certification, IEC and GST registration.
+            Stringent multi-stage quality control from raw material to dispatch.
           </p>
         </div>
       </section>
