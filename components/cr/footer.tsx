@@ -22,13 +22,15 @@ export function Footer() {
         {/* About */}
         <div>
           <div className="flex items-center gap-2.5">
-            <Image
-              src="/logo.png"
-              alt="CR Rubber and Seals Private Limited"
-              width={44}
-              height={44}
-              className="h-11 w-11 object-contain"
-            />
+            <div className="rounded-full bg-white p-2">
+              <Image
+                src="/logo.png"
+                alt="CR Rubber and Seals Private Limited"
+                width={44}
+                height={44}
+                className="h-11 w-11 object-contain"
+              />
+            </div>
             <span className="flex flex-col leading-none">
               <span className="font-[family-name:var(--font-geist-sans)] text-base font-bold text-white">
                 CR RUBBER &amp; SEALS
