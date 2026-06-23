@@ -43,7 +43,7 @@ export function HeroCarousel({
               <span className="inline-block rounded border border-brand/40 bg-brand/10 px-3 py-1 text-[11px] font-bold tracking-[0.2em] text-brand">
                 {slide.tag.toUpperCase()}
               </span>
-              <h1 className="mt-5 whitespace-pre-line font-serif text-4xl font-bold leading-[1.1] text-white text-balance sm:text-5xl lg:text-6xl">
+              <h1 className="mt-5 whitespace-pre-line font-sans text-4xl font-bold leading-[1.1] text-white text-balance sm:text-5xl lg:text-6xl">
                 {slide.title}
               </h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg">

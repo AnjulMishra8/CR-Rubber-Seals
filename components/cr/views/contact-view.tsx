@@ -69,7 +69,7 @@ export function ContactView() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
             Get In Touch
           </p>
-          <h1 className="max-w-3xl font-serif text-4xl font-bold tracking-tight text-balance sm:text-5xl">
+          <h1 className="max-w-3xl font-sans text-4xl font-bold tracking-tight text-balance sm:text-5xl">
             Contact Us / Get a Quote
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
@@ -163,7 +163,7 @@ export function ContactView() {
                   <div className="flex size-14 items-center justify-center rounded-full bg-whatsapp/10 text-whatsapp">
                     <LucideIcon name="CheckCircle2" className="size-8" />
                   </div>
-                  <h3 className="mt-4 font-serif text-2xl font-bold text-ink">Enquiry Sent</h3>
+                  <h3 className="mt-4 font-sans text-2xl font-bold text-ink">Enquiry Sent</h3>
                   <p className="mt-2 max-w-sm text-muted-foreground">
                     Thank you for reaching out. Our team will respond to your enquiry within hours,
                     not days.
@@ -178,7 +178,7 @@ export function ContactView() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit}>
-                  <h2 className="font-serif text-2xl font-bold text-ink">Send Us an Enquiry</h2>
+                  <h2 className="font-sans text-2xl font-bold text-ink">Send Us an Enquiry</h2>
                   <p className="mt-1 text-sm text-muted-foreground">
                     Fill out the form and our team will get back to you.
                   </p>

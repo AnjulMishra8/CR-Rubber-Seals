@@ -58,7 +58,7 @@ export function HomeView() {
             <span className="text-xs font-bold tracking-[0.2em] text-brand">
               {whoWeAre.label}
             </span>
-            <h2 className="mt-3 font-serif text-3xl font-bold text-ink text-balance sm:text-4xl">
+            <h2 className="mt-3 font-sans text-3xl font-bold text-ink text-balance sm:text-4xl">
               {whoWeAre.heading}
             </h2>
             {whoWeAre.body.map((para) => (
@@ -76,7 +76,7 @@ export function HomeView() {
           </div>
 
           <div className="rounded-2xl border border-border bg-muted p-8">
-            <h3 className="font-serif text-xl font-bold text-ink">
+            <h3 className="font-sans text-xl font-bold text-ink">
               Same Legacy. New Identity.
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -115,7 +115,7 @@ export function HomeView() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent">
                   <LucideIconByName name={item.icon} className="h-6 w-6 text-brand" />
                 </div>
-                <h3 className="mt-5 font-serif text-lg font-bold text-ink">{item.title}</h3>
+                <h3 className="mt-5 font-sans text-lg font-bold text-ink">{item.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {item.description}
                 </p>
@@ -187,7 +187,7 @@ export function HomeView() {
                 key={cert.title}
                 className="rounded-xl border border-border bg-background p-7 shadow-sm"
               >
-                <h3 className="font-serif text-lg font-bold text-brand">{cert.title}</h3>
+                <h3 className="font-sans text-lg font-bold text-brand">{cert.title}</h3>
                 <dl className="mt-4 space-y-3">
                   {cert.rows.map(([label, value]) => (
                     <div key={label}>
@@ -207,7 +207,7 @@ export function HomeView() {
       {/* CTA strip */}
       <section className="bg-ink py-20">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold text-white text-balance sm:text-4xl">
+          <h2 className="font-sans text-3xl font-bold text-white text-balance sm:text-4xl">
             {ctaStrip.heading}
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-slate-300">

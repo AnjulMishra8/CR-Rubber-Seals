@@ -98,7 +98,7 @@ export function InquiryModal({
             <p className="text-[10px] font-bold tracking-[0.2em] text-brand">
               INDUSTRIAL PURCHASE SPECIFICATION DESK
             </p>
-            <h3 className="font-serif text-xl font-bold">
+            <h3 className="font-sans text-xl font-bold">
               Technical Quotation Request
             </h3>
           </div>
@@ -114,7 +114,7 @@ export function InquiryModal({
 
         {sent ? (
           <div className="px-6 py-12 text-center">
-            <h4 className="font-serif text-xl font-bold text-ink">
+            <h4 className="font-sans text-xl font-bold text-ink">
               Thank you — your request has been recorded.
             </h4>
             <p className="mt-2 text-sm text-muted-foreground">
@@ -136,7 +136,7 @@ export function InquiryModal({
                 <p className="text-[10px] font-bold tracking-[0.15em] text-brand">
                   SELECTED · TARGET COMPOUND ITEM:
                 </p>
-                <p className="mt-0.5 font-serif text-lg font-bold text-ink">
+                <p className="mt-0.5 font-sans text-lg font-bold text-ink">
                   {productName}
                 </p>
               </div>
