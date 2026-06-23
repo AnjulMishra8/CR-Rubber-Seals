@@ -35,7 +35,7 @@ export const hero = {
     "India's Most Trusted Hydraulic and Pneumatic Seal Manufacturer — Precision Sealing Solutions",
   subheadline:
     'ISO 9001:2015 Certified · Sister Company of Crown Rubber Works · Navi Mumbai, Maharashtra',
-  body: 'CR Rubber and Seals Pvt. Ltd. manufactures and supplies world-class hydraulic seals, pneumatic seals, oil seals, O-rings, PU products and custom moulded rubber components. As the sister company of Crown Rubber Works, we carry the same legacy of excellence, the same product range, and the same commitment to quality — under a new identity built for the future.',
+  body: 'CR Rubber and Seals Pvt. Ltd. manufactures and supplies world-class hydraulic seals, pneumatic seals, oil seals, O-rings, PU products and custom moulded rubber components. As the sister company of Crown Rubber Works, we carry the same legacy of excellence, the same product range, and the same commitment to quality under a new identity built for the future.',
 }
 
 // Hero trust bar (below hero)
@@ -49,9 +49,9 @@ export const trustBar = [
 // Section 2 — Who We Are
 export const whoWeAre = {
   label: 'WHO WE ARE',
-  heading: 'Precision Sealing Solutions — From the Crown Rubber Works Family',
+  heading: 'Precision Sealing Solutions from the Crown Rubber Works Family',
   body: [
-    "CR Rubber and Seals Private Limited is the sister company of Crown Rubber Works — one of India's most trusted names in rubber and PU sealing since 1995. Sharing the same manufacturing facility at Pawane MIDC, Navi Mumbai, the same product range, and the same team of experts, CR Rubber and Seals Pvt. Ltd. carries forward this legacy under a distinct private limited identity — with its own ISO 9001:2015 certification, IEC registration, and GST registration.",
+    "CR Rubber and Seals Private Limited is the sister company of Crown Rubber Works, one of India's most trusted names in rubber and PU sealing since 1995. Sharing the same manufacturing facility at Pawane MIDC, Navi Mumbai, the same product range, and the same team of experts, CR Rubber and Seals Pvt. Ltd. carries forward this legacy under a distinct private limited identity with its own ISO 9001:2015 certification, IEC registration, and GST registration.",
     "CR Rubber and Seals Pvt. Ltd. combines the group's deep industry expertise with compression moulding, CNC precision manufacturing, in-house R&D, and global sourcing partnerships from Austria, Taiwan, Turkey, Italy and Singapore.",
   ],
 }
@@ -88,7 +88,7 @@ export const productRange = [
   {
     title: 'Machined Seals',
     blurb:
-      'CNC-machined custom seals up to 1500mm OD — 500+ profiles, no tooling cost, no MOQ. Meander springs, large diameter & TBM seals.',
+      'CNC-machined custom seals up to 1500mm OD with 500+ profiles, no tooling cost, no MOQ. Meander springs, large diameter & TBM seals.',
     category: 'Machined Seals',
   },
   {
@@ -100,13 +100,13 @@ export const productRange = [
   {
     title: 'O-Rings',
     blurb:
-      'NBR, Viton, Silicone and EPDM O-rings, X-rings, V-rings, backup rings, O-ring cord — standard and non-standard sizes.',
+      'NBR, Viton, Silicone and EPDM O-rings, X-rings, V-rings, backup rings, O-ring cord (standard and non-standard sizes).',
     category: 'O-Rings',
   },
   {
     title: 'Hydraulic Seals',
     blurb:
-      'Piston seals, rod seals, wiper seals and guide rings — 50+ profiles in PU, NBR, POM, PTFE. Pressure up to 700 bar.',
+      'Piston seals, rod seals, wiper seals and guide rings. 50+ profiles in PU, NBR, POM, PTFE. Pressure up to 700 bar.',
     category: 'Hydraulic Seals',
   },
   {
@@ -124,7 +124,7 @@ export const productRange = [
   {
     title: 'Teflon & Nylon',
     blurb:
-      'Teflon and nylon rods, rubber gaskets, Teflon & plastic products — corrosion resistant, per global standards.',
+      'Teflon and nylon rods, rubber gaskets, Teflon & plastic products. Corrosion resistant, per global standards.',
     category: 'Teflon & Nylon',
   },
   {
