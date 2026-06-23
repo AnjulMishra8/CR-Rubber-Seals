@@ -22,7 +22,7 @@ export function Footer() {
         {/* About */}
         <div>
           <div className="flex items-center gap-2.5">
-            <div className="rounded-md bg-white p-1">
+            <div className="rounded-md bg-white px-1.5 py-0.5">
               <Image
                 src="/logo.png"
                 alt="CR Rubber and Seals Private Limited"
