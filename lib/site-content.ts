@@ -207,13 +207,14 @@ export const manufacturingCapabilities = [
 ]
 
 export const qualityCompliance = [
-  'ISO 9001:2015 Certified (CCPL/QMS/D1131, valid to 21 May 2029)',
-  'IEC Registered for import-export (AAMCC7518G)',
-  'GST Registered: 27AAMCC7518G1ZF',
-  'In-house dimensional and quality inspection',
-  'Sourcing from certified international suppliers',
-  'Promoter personally visits global customers for R&D assessment',
+  'ISO 9001:2015 Certified',
+  'Inhouse dimensional and quality inspection',
+  'Sourcing from certified & approved suppliers',
   'Compliance with Indian Standards (IS) requirements',
+  'Material test certifications available',
+  'Commitment to consistent product performance & reliability',
+  'Systematic mould maintenance & calibration for consistent part quality',
+  'Timely delivery supported by controlled manufacturing processes',
 ]
 
 // About — directors
