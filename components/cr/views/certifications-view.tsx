@@ -21,11 +21,11 @@ export function CertificationsView() {
       </section>
 
       {/* Quality policy */}
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8" data-aos="fade-up">
         <SectionHeading align="left" eyebrow="OUR QUALITY POLICY" title="Excellence at Every Stage" />
         <div className="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-muted-foreground">
-          {qualityPolicy.map((para) => (
-            <p key={para.slice(0, 24)}>{para}</p>
+          {qualityPolicy.map((para, index) => (
+            <p key={para.slice(0, 24)} data-aos="fade-up" data-aos-delay={`${index * 50}`}>{para}</p>
           ))}
         </div>
       </section>
@@ -34,12 +34,16 @@ export function CertificationsView() {
 
       {/* Certifications */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="OUR CERTIFICATIONS" title="Certified & Registered" />
+        <div data-aos="fade-up">
+          <SectionHeading eyebrow="OUR CERTIFICATIONS" title="Certified & Registered" />
+        </div>
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          {certifications.map((cert) => (
+          {certifications.map((cert, index) => (
             <article
               key={cert.id}
               className="flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm"
+              data-aos="zoom-in"
+              data-aos-delay={`${index * 100}`}
             >
               {/* PDF Preview */}
               <div className="relative aspect-square w-full overflow-hidden bg-muted/50">
@@ -89,16 +93,20 @@ export function CertificationsView() {
 
       {/* Quality process */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <SectionHeading
-          eyebrow="QUALITY PROCESS"
-          title="Five-Stage Quality Assurance"
-          description="Samples for approval are provided as per requirement. Every order moves through five rigorous quality stages."
-        />
+        <div data-aos="fade-up">
+          <SectionHeading
+            eyebrow="QUALITY PROCESS"
+            title="Five-Stage Quality Assurance"
+            description="Samples for approval are provided as per requirement. Every order moves through five rigorous quality stages."
+          />
+        </div>
         <ol className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {qualityProcess.map((stage) => (
+          {qualityProcess.map((stage, index) => (
             <li
               key={stage.step}
               className="rounded-xl border border-border bg-card p-6 shadow-sm"
+              data-aos="fade-up"
+              data-aos-delay={`${index * 100}`}
             >
               <span className="inline-flex items-center rounded-full bg-accent px-3 py-1 font-mono text-xs font-bold text-brand">
                 {stage.step}

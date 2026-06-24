@@ -20,7 +20,7 @@ export function ProductsView() {
     <div className="bg-background">
       {/* Page header */}
       <section className="border-b border-border bg-ink text-white">
-        <div className="mx-auto max-w-7xl px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pb-20 lg:pt-32">
+        <div className="mx-auto max-w-7xl px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pb-20 lg:pt-32" data-aos="fade-up">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
             Our Products
           </p>
@@ -38,7 +38,7 @@ export function ProductsView() {
       </section>
 
       {/* Banner Section */}
-      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8" data-aos="zoom-in" data-aos-delay="200">
         <div className="overflow-hidden rounded-2xl">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Product%20Range%20Banner.PNG-LHzBcUyDIq1lErjCpJtwns8CT6qP7H.png"
@@ -68,10 +68,12 @@ export function ProductsView() {
 
         {/* Detailed category sections */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {filtered.map((product) => (
+          {filtered.map((product, index) => (
             <article
               key={product.id}
               className="flex flex-col rounded-2xl border border-border bg-card p-7 shadow-sm transition-shadow hover:shadow-lg"
+              data-aos="fade-up"
+              data-aos-delay={`${(index % 6) * 100}`}
             >
               <div className="flex items-center gap-3">
                 <span className="rounded-full bg-accent px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-brand">

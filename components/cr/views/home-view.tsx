@@ -54,7 +54,7 @@ export function HomeView() {
       {/* Who we are */}
       <section className="bg-background py-20">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <div>
+          <div data-aos="fade-up">
             <span className="text-xs font-bold tracking-[0.2em] text-brand">
               {whoWeAre.label}
             </span>
@@ -75,7 +75,7 @@ export function HomeView() {
             </button>
           </div>
 
-          <div className="rounded-2xl border border-border bg-muted p-8">
+          <div className="rounded-2xl border border-border bg-muted p-8" data-aos="fade-up" data-aos-delay="200">
             <h3 className="font-sans text-xl font-bold text-ink">
               Same Legacy. New Identity.
             </h3>
@@ -107,10 +107,12 @@ export function HomeView() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="WHY CR RUBBER AND SEALS" title="Engineered Advantages" />
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {usps.map((item) => (
+            {usps.map((item, index) => (
               <div
                 key={item.title}
                 className="rounded-xl border border-border bg-background p-7 transition-shadow hover:shadow-md"
+                data-aos="fade-up"
+                data-aos-delay={`${index * 100}`}
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent">
                   <LucideIconByName name={item.icon} className="h-6 w-6 text-brand" />
@@ -128,14 +130,18 @@ export function HomeView() {
       {/* Product range */}
       <section className="premium-dot-grid-red relative bg-background py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="PRODUCT RANGE"
-            title="Our Complete Industrial Rubber Product Range"
-            description="From standard O-rings to custom TBM seals up to 7500mm — 500+ products across 8 major sealing categories."
-          />
+          <div data-aos="fade-up">
+            <SectionHeading
+              eyebrow="PRODUCT RANGE"
+              title="Our Complete Industrial Rubber Product Range"
+              description="From standard O-rings to custom TBM seals up to 7500mm — 500+ products across 8 major sealing categories."
+            />
+          </div>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featured.map((p) => (
-              <ProductCard key={p.id} product={p} onInquiry={setInquiry} />
+            {featured.map((p, index) => (
+              <div key={p.id} data-aos="zoom-in" data-aos-delay={`${index * 100}`}>
+                <ProductCard product={p} onInquiry={setInquiry} />
+              </div>
             ))}
           </div>
           <div className="mt-10 text-center">
@@ -153,16 +159,20 @@ export function HomeView() {
       {/* Industries grid */}
       <section className="bg-muted py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="INDUSTRIES WE SERVE"
-            title="Trusted Across 12+ Industrial Sectors — Pan India & Global"
-            description="Our sealing solutions power operations in India's most demanding environments — from underground mines to offshore oil rigs."
-          />
+          <div data-aos="fade-up">
+            <SectionHeading
+              eyebrow="INDUSTRIES WE SERVE"
+              title="Trusted Across 12+ Industrial Sectors — Pan India & Global"
+              description="Our sealing solutions power operations in India's most demanding environments — from underground mines to offshore oil rigs."
+            />
+          </div>
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {homeIndustries.map((ind) => (
+            {homeIndustries.map((ind, index) => (
               <div
                 key={ind.name}
                 className="flex flex-col items-center gap-3 rounded-xl border border-border bg-card p-6 text-center transition-shadow hover:shadow-md"
+                data-aos="fade-up"
+                data-aos-delay={`${(index % 4) * 100}`}
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent">
                   <LucideIconByName name={ind.icon} className="h-6 w-6 text-brand" />
@@ -177,15 +187,19 @@ export function HomeView() {
       {/* Certifications strip */}
       <section className="border-y border-slate-100 bg-card py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="CERTIFIED & COMPLIANT"
-            title="Certifications & Registrations"
-          />
+          <div data-aos="fade-up">
+            <SectionHeading
+              eyebrow="CERTIFIED & COMPLIANT"
+              title="Certifications & Registrations"
+            />
+          </div>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
-            {certStrip.map((cert) => (
+            {certStrip.map((cert, index) => (
               <div
                 key={cert.title}
                 className="rounded-xl border border-border bg-background p-7 shadow-sm"
+                data-aos="fade-up"
+                data-aos-delay={`${index * 100}`}
               >
                 <h3 className="font-sans text-lg font-bold text-brand">{cert.title}</h3>
                 <dl className="mt-4 space-y-3">
@@ -206,7 +220,7 @@ export function HomeView() {
 
       {/* CTA strip */}
       <section className="bg-ink py-20">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8" data-aos="fade-up">
           <h2 className="font-sans text-3xl font-bold text-white text-balance sm:text-4xl">
             {ctaStrip.heading}
           </h2>
