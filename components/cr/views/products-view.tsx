@@ -39,11 +39,14 @@ export function ProductsView() {
 
       {/* Banner Section */}
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8" data-aos="zoom-in" data-aos-delay="100">
-        <div className="overflow-hidden rounded-2xl">
+        <div className="overflow-hidden rounded-2xl bg-muted">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Product%20Range%20Banner.PNG-LHzBcUyDIq1lErjCpJtwns8CT6qP7H.png"
             alt="Engineered to perform. Built to last."
             className="w-full object-cover"
+            loading="lazy"
+            decoding="async"
+            fetchPriority="auto"
           />
         </div>
       </section>

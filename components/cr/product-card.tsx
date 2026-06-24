@@ -22,6 +22,8 @@ export function ProductCard({
               alt={product.title}
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
+              decoding="async"
+              fetchPriority="low"
             />
           ) : (
             <div className="industrial-grid absolute inset-0 opacity-20" />
