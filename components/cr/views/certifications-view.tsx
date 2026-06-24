@@ -42,12 +42,12 @@ export function CertificationsView() {
               className="flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm"
             >
               {/* PDF Preview */}
-              <div className="relative h-64 w-full overflow-hidden bg-muted/50">
+              <div className="relative aspect-square w-full overflow-hidden bg-muted/50">
                 {cert.preview ? (
                   <img
                     src={cert.preview}
                     alt={cert.title}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-contain"
                   />
                 ) : (
                   <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-brand/10 to-brand/5">
