@@ -75,7 +75,7 @@ export function HomeView() {
             </button>
           </div>
 
-          <div className="rounded-2xl border border-border bg-muted p-8" data-aos="fade-up" data-aos-delay="200">
+          <div className="rounded-2xl border border-border bg-muted p-8" data-aos="fade-up" data-aos-delay="100">
             <h3 className="font-sans text-xl font-bold text-ink">
               Same Legacy. New Identity.
             </h3>
@@ -112,7 +112,7 @@ export function HomeView() {
                 key={item.title}
                 className="rounded-xl border border-border bg-background p-7 transition-shadow hover:shadow-md"
                 data-aos="fade-up"
-                data-aos-delay={`${index * 100}`}
+                data-aos-delay={`${index * 50}`}
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent">
                   <LucideIconByName name={item.icon} className="h-6 w-6 text-brand" />
@@ -139,7 +139,7 @@ export function HomeView() {
           </div>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featured.map((p, index) => (
-              <div key={p.id} data-aos="zoom-in" data-aos-delay={`${index * 100}`}>
+              <div key={p.id} data-aos="zoom-in" data-aos-delay={`${index * 50}`}>
                 <ProductCard product={p} onInquiry={setInquiry} />
               </div>
             ))}
@@ -199,7 +199,7 @@ export function HomeView() {
                 key={cert.title}
                 className="rounded-xl border border-border bg-background p-7 shadow-sm"
                 data-aos="fade-up"
-                data-aos-delay={`${index * 100}`}
+                data-aos-delay={`${index * 50}`}
               >
                 <h3 className="font-sans text-lg font-bold text-brand">{cert.title}</h3>
                 <dl className="mt-4 space-y-3">

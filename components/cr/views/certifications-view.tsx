@@ -43,7 +43,7 @@ export function CertificationsView() {
               key={cert.id}
               className="flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm"
               data-aos="zoom-in"
-              data-aos-delay={`${index * 100}`}
+              data-aos-delay={`${index * 50}`}
             >
               {/* PDF Preview */}
               <div className="relative aspect-square w-full overflow-hidden bg-muted/50">
@@ -106,7 +106,7 @@ export function CertificationsView() {
               key={stage.step}
               className="rounded-xl border border-border bg-card p-6 shadow-sm"
               data-aos="fade-up"
-              data-aos-delay={`${index * 100}`}
+              data-aos-delay={`${index * 50}`}
             >
               <span className="inline-flex items-center rounded-full bg-accent px-3 py-1 font-mono text-xs font-bold text-brand">
                 {stage.step}

@@ -38,7 +38,7 @@ export function ProductsView() {
       </section>
 
       {/* Banner Section */}
-      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8" data-aos="zoom-in" data-aos-delay="200">
+      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8" data-aos="zoom-in" data-aos-delay="100">
         <div className="overflow-hidden rounded-2xl">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Product%20Range%20Banner.PNG-LHzBcUyDIq1lErjCpJtwns8CT6qP7H.png"
@@ -73,7 +73,7 @@ export function ProductsView() {
               key={product.id}
               className="flex flex-col rounded-2xl border border-border bg-card p-7 shadow-sm transition-shadow hover:shadow-lg"
               data-aos="fade-up"
-              data-aos-delay={`${(index % 6) * 100}`}
+              data-aos-delay={`${(index % 6) * 50}`}
             >
               <div className="flex items-center gap-3">
                 <span className="rounded-full bg-accent px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-brand">
