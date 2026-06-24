@@ -90,36 +90,42 @@ export const productRange = [
     blurb:
       'CNC-machined custom seals up to 1500mm OD with 500+ profiles, no tooling cost, no MOQ. Meander springs, large diameter & TBM seals.',
     category: 'Machined Seals',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Machined%20Seals-hXHu42RzD1pW3TJu81c5Tnsvof0h4g.png',
   },
   {
     title: 'Seal Kits',
     blurb:
       'Rock breaker, pump and excavator seal kits. Compatible with BEML, Komatsu, L&T, Caterpillar, TATA and more.',
     category: 'Seal Kits',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seal%20Kits-ZbytSM91CF5Tib6MSUorYeSvyFqiUY.png',
   },
   {
     title: 'O-Rings',
     blurb:
       'NBR, Viton, Silicone and EPDM O-rings, X-rings, V-rings, backup rings, O-ring cord (standard and non-standard sizes).',
     category: 'O-Rings',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/O-Rings-fgbhIQlOjsKL3KyRdDTH6NSHEQXbwA.png',
   },
   {
     title: 'Hydraulic Seals',
     blurb:
       'Piston seals, rod seals, wiper seals and guide rings. 50+ profiles in PU, NBR, POM, PTFE. Pressure up to 700 bar.',
     category: 'Hydraulic Seals',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hydraulic%20Seals-4YKpzTBunXy1zZLWIGhjzyYHvPknCD.png',
   },
   {
     title: 'Pneumatic Seals',
     blurb:
       'Oil seals, fabric oil seals and V-rings for rotary shaft and pneumatic applications.',
     category: 'Pneumatic Seals',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pneumatic%20Seals-rtYNDJ6xLo8lJG7ZavVHKKl1huPglw.png',
   },
   {
     title: 'Moulded Rubber',
     blurb:
       'Custom moulded rubber parts, gaskets, diaphragms, pipe saddles, diffuser plates and rubber mouldings.',
     category: 'Moulded Rubber',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Moulded%20Rubber%20Parts-v3yIll5GHQqZxHfypY7gxrmhhBq2uU.png',
   },
   {
     title: 'Teflon & Nylon',
