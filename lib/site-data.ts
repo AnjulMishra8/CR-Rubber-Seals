@@ -25,7 +25,7 @@ Up to 1500mm OD`,
   {
     id: 'orings',
     tag: 'Elastomer Engineering',
-    title: `O-Rings & Rings in
+    title: `O-Rings in
 Every Material`,
     description:
       'NBR, Viton, Silicone and EPDM O-rings, X-rings, V-rings, backup rings and O-ring cord (standard and non-standard sizes).',
