@@ -2,9 +2,11 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Plus_Jakarta_Sans, Playfair_Display, Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
+import 'aos/dist/aos.css'
 import { Header } from '@/components/cr/header'
 import { Footer } from '@/components/cr/footer'
 import { WhatsAppButton } from '@/components/cr/whatsapp-button'
+import { AOSInitializer } from '@/components/aos-initializer'
 
 const jakarta = Plus_Jakarta_Sans({
   variable: '--font-jakarta',
@@ -57,6 +59,7 @@ export default function RootLayout({
       className={`${jakarta.variable} ${playfair.variable} ${geistSans.variable} ${geistMono.variable} bg-background`}
     >
       <body className="font-sans antialiased">
+        <AOSInitializer />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

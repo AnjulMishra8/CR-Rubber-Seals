@@ -30,7 +30,7 @@ export function AboutView() {
       {/* Our Story */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-5">
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-3" data-aos="fade-up">
             <SectionHeading
               align="left"
               eyebrow="OUR STORY"
@@ -48,7 +48,7 @@ export function AboutView() {
             </div>
           </div>
 
-          <aside className="lg:col-span-2">
+          <aside className="lg:col-span-2" data-aos="fade-up" data-aos-delay="200">
             <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
               <h3 className="font-sans text-lg font-bold text-ink">The CR Advantage</h3>
               <ol className="mt-4 space-y-3">
@@ -68,13 +68,15 @@ export function AboutView() {
 
       {/* Capabilities */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <SectionHeading
-          eyebrow="OUR CAPABILITIES"
-          title="Manufacturing & Quality"
-          description="Vertically integrated capabilities that let us deliver precision, speed and full compliance."
-        />
+        <div data-aos="fade-up">
+          <SectionHeading
+            eyebrow="OUR CAPABILITIES"
+            title="Manufacturing & Quality"
+            description="Vertically integrated capabilities that let us deliver precision, speed and full compliance."
+          />
+        </div>
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
-          <div className="rounded-xl border border-border bg-card p-7 shadow-sm">
+          <div className="rounded-xl border border-border bg-card p-7 shadow-sm" data-aos="fade-up">
             <div className="flex items-center gap-3">
               <div className="flex size-11 items-center justify-center rounded-lg bg-accent text-brand">
                 <LucideIcon name="Cog" className="size-6" />
