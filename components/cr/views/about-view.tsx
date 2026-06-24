@@ -1,4 +1,3 @@
-import { timeline } from '@/lib/site-data'
 import {
   company,
   crAdvantage,
@@ -37,22 +36,14 @@ export function AboutView() {
               eyebrow="OUR STORY"
               title="CR Rubber and Seals — Sister Company of Crown Rubber Works"
             />
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
+            <div className="text-base leading-relaxed text-muted-foreground">
               <p>
-                CR Rubber and Seals Private Limited is the sister company of Crown Rubber Works — a
+                CR Rubber and Seals Private Limited is the sister company of Crown Rubber Works, a
                 name that has been synonymous with sealing excellence since 1995. Founded and
                 managed by the same team, operating from the same manufacturing facility at Pawane
                 MIDC, Navi Mumbai, CR Rubber and Seals Pvt. Ltd. carries forward the full product
-                range, technical expertise, and quality standards of the Crown Rubber Works group —
+                range, technical expertise and quality standards of the Crown Rubber Works group,
                 under a distinct private limited identity.
-              </p>
-              <p>
-                Both companies are led by Director Mr. Mohammad Anis Ansari and share the same
-                certifications, manufacturing infrastructure, and global supply chain. CR Rubber and
-                Seals Pvt. Ltd. has its own ISO 9001:2015 certification (Certificate No:
-                CCPL/QMS/D1131, valid to 2029), its own IEC import-export registration (AAMCC7518G),
-                and its own GST registration (27AAMCC7518G1ZF) — giving clients full compliance and
-                documentation under this entity.
               </p>
             </div>
           </div>
@@ -72,36 +63,6 @@ export function AboutView() {
               </ol>
             </div>
           </aside>
-        </div>
-      </section>
-
-      {/* Timeline */}
-      <section className="bg-muted/60 py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="COMPANY TIMELINE"
-            title="Milestones That Shaped Us"
-            description="From the founding of Crown Rubber Works to the establishment of CR Rubber and Seals Pvt. Ltd."
-          />
-          <ol className="mt-12 space-y-8 border-l-2 border-border pl-6 sm:mx-auto sm:max-w-3xl">
-            {timeline.map((item, idx) => (
-              <li key={item.year} className="relative">
-                <span className="absolute -left-[31px] flex size-5 items-center justify-center rounded-full border-4 border-background bg-brand" />
-                <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <span className="rounded bg-accent px-2.5 py-1 font-mono text-sm font-bold text-brand">
-                      {item.year}
-                    </span>
-                    <h3 className="font-sans text-lg font-bold text-ink">{item.title}</h3>
-                  </div>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                    {item.description}
-                  </p>
-                </div>
-                <span className="sr-only">Step {idx + 1}</span>
-              </li>
-            ))}
-          </ol>
         </div>
       </section>
 
@@ -151,7 +112,7 @@ export function AboutView() {
       {/* Directors */}
       <section className="bg-muted/60 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="LEADERSHIP" title="Our Directors" />
+          <SectionHeading eyebrow="LEADERSHIP" title="Directors" />
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             {directors.map((d) => (
               <div key={d.name} className="rounded-xl border border-border bg-card p-7 shadow-sm">
