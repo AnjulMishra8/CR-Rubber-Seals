@@ -41,44 +41,39 @@ export function CertificationsView() {
           {certifications.map((cert, index) => (
             <article
               key={cert.id}
-              className="group relative flex overflow-hidden border-b border-border transition-all hover:bg-muted/50"
+              className="group relative flex overflow-visible border-b border-border transition-all hover:bg-muted/50"
               data-aos="fade-up"
               data-aos-delay={`${index * 50}`}
             >
               {/* Left side - Title */}
-              <div className="flex flex-1 items-center px-6 py-8 sm:py-10">
+              <div className="flex flex-1 items-center px-6 py-4 sm:py-5">
                 <div className="flex items-center gap-4 w-full">
                   <div className="flex shrink-0 size-10 items-center justify-center rounded-lg bg-brand/10 text-brand">
                     <LucideIcon name={cert.icon} className="size-5" />
                   </div>
-                  <h3 className="font-sans text-lg font-semibold text-ink">
+                  <h3 className="font-sans text-base font-semibold text-ink">
                     {cert.title}
                   </h3>
                 </div>
               </div>
 
-              {/* Right side - Preview Image (Hidden by default, shown on hover) */}
-              <div className="relative hidden w-64 overflow-hidden sm:block">
-                {cert.preview ? (
-                  <>
+              {/* Expanded Preview Popup - Shown on hover */}
+              {cert.preview && (
+                <div className="absolute left-0 right-0 top-full z-50 hidden origin-top scale-95 opacity-0 transition-all duration-300 group-hover:block group-hover:scale-100 group-hover:opacity-100 pt-2">
+                  <div className="mx-auto max-w-md overflow-hidden rounded-lg border border-border bg-background shadow-xl">
                     <img
                       src={cert.preview}
                       alt={cert.title}
-                      className="h-full w-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                      className="h-auto w-full object-contain bg-muted"
                       loading="lazy"
                       decoding="async"
                       fetchPriority="low"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                  </>
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-muted">
-                    <LucideIcon name={cert.icon} className="size-12 text-muted-foreground/30" />
                   </div>
-                )}
-              </div>
+                </div>
+              )}
 
-              {/* Download button - Always visible as icon on hover */}
+              {/* Download button - Always visible */}
               <div className="flex shrink-0 items-center px-4 sm:px-6">
                 <a
                   href={cert.file}
