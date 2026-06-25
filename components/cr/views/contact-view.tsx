@@ -276,7 +276,7 @@ export function ContactView() {
             className="h-[360px] w-full"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            src={`https://maps.google.com/maps?q=${encodeURIComponent(company.mapQuery)}&output=embed`}
+            src="https://maps.google.com/maps?q=https://maps.app.goo.gl/rYFdQfdsnCZAsAkB9&output=embed"
           />
         </div>
       </section>
