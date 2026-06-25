@@ -37,56 +37,53 @@ export function CertificationsView() {
         <div data-aos="fade-up">
           <SectionHeading eyebrow="OUR CERTIFICATIONS" title="Certified & Registered" />
         </div>
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+        <div className="mt-12 space-y-px border-t border-border">
           {certifications.map((cert, index) => (
             <article
               key={cert.id}
-              className="flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm"
-              data-aos="zoom-in"
+              className="group relative flex overflow-visible border-b border-border transition-all hover:bg-muted/50"
+              data-aos="fade-up"
               data-aos-delay={`${index * 50}`}
             >
-              {/* PDF Preview */}
-              <div className="relative aspect-square w-full overflow-hidden bg-muted/50">
-                {cert.preview ? (
-                  <img
-                    src={cert.preview}
-                    alt={cert.title}
-                    className="h-full w-full object-contain"
-                    loading="lazy"
-                    decoding="async"
-                    fetchPriority="low"
-                  />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-brand/10 to-brand/5">
-                    <div className="text-center">
-                      <LucideIcon name={cert.icon} className="mx-auto size-16 text-brand/30" />
-                      <p className="mt-3 text-sm text-muted-foreground">Certificate preview</p>
-                    </div>
+              {/* Left side - Title */}
+              <div className="flex flex-1 items-center px-6 py-4 sm:py-5">
+                <div className="flex items-center gap-4 w-full">
+                  <div className="flex shrink-0 size-10 items-center justify-center rounded-lg bg-brand/10 text-brand">
+                    <LucideIcon name={cert.icon} className="size-5" />
                   </div>
-                )}
-              </div>
-
-              {/* Certificate Details */}
-              <div className="flex items-center gap-4 border-b border-border bg-background p-6">
-                <div className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-brand text-primary-foreground">
-                  <LucideIcon name={cert.icon} className="size-6" />
+                  <h3 className="font-sans text-base font-semibold text-ink">
+                    {cert.title}
+                  </h3>
                 </div>
-                <h3 className="font-sans text-lg font-bold text-ink text-balance">
-                  {cert.title}
-                </h3>
               </div>
 
-              <div className="flex flex-1 flex-col p-6">
-                <p className="text-sm leading-relaxed text-muted-foreground">{cert.summary}</p>
+              {/* Expanded Preview Popup - Shown on hover */}
+              {cert.preview && (
+                <div className="absolute left-0 right-0 top-full z-50 hidden origin-top scale-95 opacity-0 transition-all duration-300 group-hover:block group-hover:scale-100 group-hover:opacity-100 pt-2">
+                  <div className="mx-auto max-w-md overflow-hidden rounded-lg border border-border bg-background shadow-xl">
+                    <img
+                      src={cert.preview}
+                      alt={cert.title}
+                      className="h-auto w-full object-contain bg-muted"
+                      loading="lazy"
+                      decoding="async"
+                      fetchPriority="low"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {/* Download button - Always visible */}
+              <div className="flex shrink-0 items-center px-4 sm:px-6">
                 <a
                   href={cert.file}
                   download
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-auto inline-flex items-center justify-center gap-2 rounded-full border border-border bg-muted px-4 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand"
+                  title={`Download ${cert.title}`}
+                  className="inline-flex items-center justify-center size-10 rounded-full border border-border bg-background text-ink transition-all hover:border-brand hover:text-brand hover:bg-brand/5"
                 >
-                  <LucideIcon name="Download" className="size-4" />
-                  {cert.downloadLabel}
+                  <LucideIcon name="Download" className="size-5" />
                 </a>
               </div>
             </article>
