@@ -33,15 +33,15 @@ export function CertificationsView() {
 
 
       {/* Certifications */}
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="relative z-20 mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div data-aos="fade-up">
           <SectionHeading eyebrow="OUR CERTIFICATIONS" title="Certified & Registered" />
         </div>
-        <div className="mt-12 space-y-px border-t border-border">
+        <div className="relative z-20 mt-12 space-y-px border-t border-border">
           {certifications.map((cert, index) => (
             <article
               key={cert.id}
-              className="group relative flex overflow-visible border-b border-border transition-all hover:bg-muted/50"
+              className="group relative z-0 flex overflow-visible border-b border-border transition-all hover:bg-muted/50"
               data-aos="fade-up"
               data-aos-delay={`${index * 50}`}
             >
@@ -59,8 +59,8 @@ export function CertificationsView() {
 
               {/* Expanded Preview Popup - Shown on hover */}
               {cert.preview && (
-                <div className="absolute left-0 right-0 top-full z-50 hidden origin-top scale-95 opacity-0 transition-all duration-300 group-hover:block group-hover:scale-100 group-hover:opacity-100 pt-2">
-                  <div className="mx-auto max-w-md overflow-hidden rounded-lg border border-border bg-background shadow-xl">
+                <div className="pointer-events-none absolute left-1/2 top-1/2 z-[9999] w-96 -translate-x-1/2 -translate-y-1/2 scale-95 opacity-0 invisible transition-all duration-300 group-hover:pointer-events-auto group-hover:scale-100 group-hover:opacity-100 group-hover:visible">
+                  <div className="overflow-hidden rounded-lg border border-border bg-background shadow-2xl">
                     <img
                       src={cert.preview}
                       alt={cert.title}
