@@ -271,13 +271,15 @@ export function ContactView() {
 
         {/* Map */}
         <div className="mt-12 overflow-hidden rounded-xl border border-border shadow-sm">
-          <iframe
-            title="CR Rubber and Seals location"
-            className="h-[360px] w-full"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.6839268943607!2d72.9956547!3d19.0176998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c99c7d7e0001%3A0x123456789abcdef!2sCR%20Rubber%20and%20Seals!5e0!3m2!1sen!2sin!4v1234567890"
-          />
+          <a href="https://maps.app.goo.gl/rYFdQfdsnCZAsAkB9" target="_blank" rel="noopener noreferrer" className="block h-[360px] w-full overflow-hidden">
+            <iframe
+              title="Crown Rubber Works location"
+              className="h-full w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=W+10+TTC+Industrial+Area+Pawane+MIDC+Turbhe+Navi+Mumbai+400705&output=embed"
+            />
+          </a>
         </div>
       </section>
     </div>
