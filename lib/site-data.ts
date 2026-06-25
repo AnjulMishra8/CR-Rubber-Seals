@@ -285,7 +285,7 @@ export const products = [
     id: 'machined-seals',
     title: 'Machined Seals',
     category: 'Machined Seals',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Machined%20Seals-hXHu42RzD1pW3TJu81c5Tnsvof0h4g.png',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Machined%20Seals-xtLPohhwesrowmA7t9mVFHOKfUYWXW.jpg',
     tagline: 'CNC-machined custom seals. No tooling cost, no MOQ.',
     description:
       'One of our flagship capabilities: precision CNC-machined sealing solutions for the most demanding applications, with no tooling cost and no minimum order requirement.',
@@ -302,7 +302,7 @@ export const products = [
     id: 'seal-kits',
     title: 'Seal Kits',
     category: 'Seal Kits',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seal%20Kits-ZbytSM91CF5Tib6MSUorYeSvyFqiUY.png',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seal%20Kits-Tchg9JOW2259mg3bozyuH0ze1TmGpl.jpg',
     tagline: 'OEM-interchangeable kits for construction, mining & excavation.',
     description:
       'Complete seal kits directly interchangeable with OEM components for all major construction, mining and excavation equipment brands, ensuring fast maintenance turnaround on site.',
@@ -318,7 +318,7 @@ export const products = [
     id: 'o-rings',
     title: 'O-Rings',
     category: 'O-Rings',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/O-Rings-fgbhIQlOjsKL3KyRdDTH6NSHEQXbwA.png',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/O-Rings-XqxSicnZvVkeVhezUuKuAhGpN5q9f1.jpg',
     tagline: 'Any elastomer, any size. Standard and non-standard.',
     description:
       'O-rings in any elastomeric material to any customer specification. Standard and non-standard sizes, in all major ring profiles for static and dynamic sealing applications.',
@@ -335,7 +335,7 @@ export const products = [
     id: 'hydraulic-seals',
     title: 'Hydraulic Seals',
     category: 'Hydraulic Seals',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hydraulic%20Seals-4YKpzTBunXy1zZLWIGhjzyYHvPknCD.png',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hydraulic%20Seals-xGlEqyl1ygpIFImsDeVQyvoYpz8CzR.jpg',
     tagline: '50+ profiles, pressures up to 700 bar.',
     description:
       'Our hydraulic seals cover every position in a hydraulic cylinder (piston, rod, wiper and guide). Available in 50+ standard profiles across all materials and pressures up to 700 bar.',
@@ -351,7 +351,7 @@ export const products = [
     id: 'pneumatic-seals',
     title: 'Pneumatic Seals',
     category: 'Pneumatic Seals',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pneumatic%20Seals-rtYNDJ6xLo8lJG7ZavVHKKl1huPglw.png',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pneumatic%20Seals-XfNw8wEFT27kCWwAS1kbeaBO2DShF8.jpg',
     tagline: 'Rotary shaft oil seals, fabric oil seals & V-rings.',
     description:
       'Covers rotary shaft oil seals, fabric oil seals and V-rings for high-speed, contamination-sensitive and heavy-duty rotating shaft applications across all industries.',
@@ -367,7 +367,7 @@ export const products = [
     id: 'moulded-rubber',
     title: 'Moulded Rubber Parts',
     category: 'Moulded Rubber',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Moulded%20Rubber%20Parts-v3yIll5GHQqZxHfypY7gxrmhhBq2uU.png',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Moulded%20Rubber%20Parts-OJwl8bBXTjDOykKIlYo5knV9i4xBiu.jpg',
     tagline: 'Custom compression-moulded components to exact spec.',
     description:
       'With in-house rubber compounding and CNC mould manufacturing, we produce custom moulded rubber components to exact client specifications from simple gaskets to complex multi-insert mouldings.',
