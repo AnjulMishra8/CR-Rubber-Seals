@@ -277,7 +277,7 @@ export function ContactView() {
               className="h-full w-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://maps.google.com/maps?q=32RJ%2BX6+Navi+Mumbai+Maharashtra&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.4829!2d73.02912699999999!3d19.0925083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c104e7637f47%3A0x75b6f9fe1c56cbb6!2sCrown%20Rubber%20Works!5e0!3m2!1sen!2sin!4v1720000000000"
             />
           </a>
         </div>
