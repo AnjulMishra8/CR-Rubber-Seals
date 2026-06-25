@@ -277,7 +277,7 @@ export function ContactView() {
               className="h-full w-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://maps.google.com/maps?q=W+10+TTC+Industrial+Area+Pawane+MIDC+Turbhe+Navi+Mumbai+400705&output=embed"
+              src="https://maps.google.com/maps?q=32RJ%2BX6+Navi+Mumbai+Maharashtra&output=embed"
             />
           </a>
         </div>
