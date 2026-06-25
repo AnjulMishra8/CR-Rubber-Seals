@@ -59,8 +59,8 @@ export function CertificationsView() {
 
               {/* Expanded Preview Popup - Shown on hover */}
               {cert.preview && (
-                <div className="absolute left-0 right-0 top-full z-50 hidden origin-top scale-95 opacity-0 transition-all duration-300 group-hover:block group-hover:scale-100 group-hover:opacity-100 pt-2">
-                  <div className="mx-auto max-w-md overflow-hidden rounded-lg border border-border bg-background shadow-xl">
+                <div className="pointer-events-none absolute left-1/2 top-1/2 z-[9999] hidden -translate-x-1/2 -translate-y-1/2 scale-95 opacity-0 transition-all duration-300 group-hover:pointer-events-auto group-hover:block group-hover:scale-100 group-hover:opacity-100">
+                  <div className="mx-auto max-w-lg overflow-hidden rounded-lg border border-border bg-background shadow-2xl">
                     <img
                       src={cert.preview}
                       alt={cert.title}
