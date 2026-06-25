@@ -41,7 +41,7 @@ export function CertificationsView() {
           {certifications.map((cert, index) => (
             <article
               key={cert.id}
-              className="group relative z-0 flex overflow-visible border-b border-border transition-all hover:bg-muted/50"
+              className="group relative flex overflow-visible border-b border-border transition-all hover:bg-muted/50"
               data-aos="fade-up"
               data-aos-delay={`${index * 50}`}
             >
