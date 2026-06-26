@@ -90,7 +90,7 @@ export function ContactView() {
                   <div className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-accent text-brand">
                     <LucideIcon name={card.icon} className="size-5" />
                   </div>
-                  <h3 className="font-serif text-base font-bold text-ink">{card.title}</h3>
+                  <h3 className="font-sans text-base font-bold text-ink">{card.title}</h3>
                 </div>
                 <div className="mt-4 space-y-1.5">
                   {card.lines.map((line, i) =>
@@ -98,12 +98,12 @@ export function ContactView() {
                       <a
                         key={line}
                         href={card.hrefs[i]}
-                        className="block text-sm leading-relaxed text-ink/80 transition-colors hover:text-brand"
+                        className="block font-sans text-sm leading-relaxed text-ink/80 transition-colors hover:text-brand"
                       >
                         {line}
                       </a>
                     ) : (
-                      <p key={line} className="text-sm leading-relaxed text-ink/80">
+                      <p key={line} className="font-sans text-sm leading-relaxed text-ink/80">
                         {line}
                       </p>
                     ),
