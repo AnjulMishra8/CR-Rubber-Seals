@@ -66,6 +66,17 @@ export function AboutView() {
         </div>
       </section>
 
+      {/* Banner */}
+      <section className="my-12 overflow-hidden rounded-xl border border-border shadow-lg" data-aos="zoom-in">
+        <img
+          src="/images/about-us-banner.png"
+          alt="CR Rubber and Seals manufacturing capabilities and operations"
+          className="h-auto w-full object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+      </section>
+
       {/* Capabilities */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div data-aos="fade-up">
