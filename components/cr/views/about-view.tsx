@@ -67,14 +67,16 @@ export function AboutView() {
       </section>
 
       {/* Banner */}
-      <section className="my-12 overflow-hidden rounded-xl border border-border shadow-lg" data-aos="zoom-in">
-        <img
-          src="/images/about-us-banner.png"
-          alt="CR Rubber and Seals manufacturing capabilities and operations"
-          className="h-auto w-full object-cover"
-          loading="lazy"
-          decoding="async"
-        />
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="overflow-hidden rounded-xl border border-border shadow-lg" data-aos="zoom-in">
+          <img
+            src="/images/about-us-banner.png"
+            alt="CR Rubber and Seals manufacturing capabilities and operations"
+            className="h-auto w-full object-cover"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
       </section>
 
       {/* Capabilities */}
@@ -146,7 +148,7 @@ export function AboutView() {
       </section>
 
       {/* Address strip */}
-      <section className="border-t border-border bg-background py-10">
+      <section className="border-t border-border bg-background py-16">
         <div className="mx-auto flex max-w-7xl flex-col items-start gap-4 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <div className="flex items-start gap-3">
             <LucideIcon name="MapPin" className="mt-1 size-5 shrink-0 text-brand" />
