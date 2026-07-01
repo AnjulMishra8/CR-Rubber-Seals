@@ -20,7 +20,7 @@ Up to 1500mm OD`,
     description:
       'CNC-machined custom seals with 500+ profiles. No tooling cost, no minimum order. Large diameter and TBM seals up to 7500mm.',
     badge: 'No Tooling Cost · No MOQ',
-    image: '/images/slide-4.png',
+    image: '/images/slide-2.png',
   },
   {
     id: 'orings',
@@ -30,7 +30,7 @@ Every Material`,
     description:
       'NBR, Viton, Silicone and EPDM O-rings, X-rings, V-rings, backup rings and O-ring cord (standard and non-standard sizes).',
     badge: 'Standard & Custom Sizes',
-    image: '/images/slide-2.png',
+    image: '/images/slide-3.png',
   },
   {
     id: 'moulded-pu',
@@ -40,7 +40,7 @@ Polyurethane Products`,
     description:
       'Custom moulded rubber parts, gaskets, diaphragms and a complete polyurethane range for industrial, mining and material-handling applications.',
     badge: 'In-House R&D & Compounding',
-    image: '/images/slide-3.png',
+    image: '/images/slide-4.png',
   },
 ] as const
 
