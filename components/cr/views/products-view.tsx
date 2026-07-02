@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react'
 import { products } from '@/lib/site-data'
 import { InquiryModal } from '@/components/cr/inquiry-modal'
 import { LucideIcon } from '@/components/cr/lucide-icon'
+import { CatalogSection } from '@/components/cr/catalog-section'
 
 const categories = ['All Products', ...Array.from(new Set(products.map((p) => p.category)))]
 
@@ -50,6 +51,8 @@ export function ProductsView() {
           />
         </div>
       </section>
+
+      <CatalogSection />
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Category filters */}
