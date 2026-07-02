@@ -18,14 +18,14 @@ export function CatalogSection() {
             <div className="flex shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-brand/20 to-brand/10 p-4 transition-all group-hover:scale-110">
               <LucideIcon name="FileText" className="size-8 text-brand" />
             </div>
-            <h3 className="font-sans text-lg font-semibold text-ink">Product Catalog</h3>
+            <h3 className="font-sans text-lg font-semibold text-ink">Product Catalogue</h3>
           </button>
 
           {/* Right 1/4 - Download Button */}
           <div className="flex w-1/4 items-center justify-center px-6 py-6">
             <a
-              href="/documents/catalog.pdf"
-              download="CR-Rubber-Seals-Catalog.pdf"
+              href="/documents/CR Catalogue.pdf"
+              download="CR Catalogue.pdf"
               className="group/btn flex items-center justify-center gap-2 rounded-lg bg-brand px-6 py-3 font-sans text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-brand/90 hover:shadow-xl active:scale-95"
             >
               <LucideIcon name="Download" className="size-5 transition-transform group-hover/btn:translate-y-0.5" />
@@ -56,9 +56,9 @@ export function CatalogSection() {
 
             {/* PDF Viewer */}
             <iframe
-              src="/documents/catalog.pdf#toolbar=0"
+              src="/documents/CR Catalogue.pdf#toolbar=0"
               className="h-full w-full rounded-lg"
-              title="Product Catalog Preview"
+              title="Product Catalogue Preview"
             />
           </div>
         </div>
