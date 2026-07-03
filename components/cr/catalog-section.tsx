@@ -60,7 +60,6 @@ export function CatalogSection() {
               className="h-full w-full rounded-lg"
               style={{ border: 'none' }}
               title="Product Catalogue Preview"
-              sandbox="allow-same-origin"
             />
           </div>
         </div>
