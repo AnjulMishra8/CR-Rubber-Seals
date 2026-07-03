@@ -56,9 +56,11 @@ export function CatalogSection() {
 
             {/* PDF Viewer */}
             <iframe
-              src="/documents/CR Catalogue.pdf#toolbar=0"
+              src="/documents/CR Catalogue.pdf#toolbar=0&navpanes=0&view=FitH"
               className="h-full w-full rounded-lg"
+              style={{ border: 'none' }}
               title="Product Catalogue Preview"
+              sandbox="allow-same-origin"
             />
           </div>
         </div>
