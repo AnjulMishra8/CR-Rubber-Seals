@@ -61,7 +61,7 @@ export function ProductsView() {
             <button
               key={cat}
               onClick={() => setActive(cat)}
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
+              className={`whitespace-nowrap rounded-lg border px-3 py-2 text-sm font-medium transition ${
                 active === cat
                   ? 'border-primary bg-primary text-primary-foreground'
                   : 'border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground'
