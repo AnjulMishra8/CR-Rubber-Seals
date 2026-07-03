@@ -24,7 +24,7 @@ export function CatalogSection() {
           {/* Right 1/4 - Download Button */}
           <div className="flex items-center justify-center px-2 py-2 sm:w-1/4 sm:px-6 sm:py-6">
             <a
-              href="/documents/CR Catalogue.pdf"
+              href="/documents/CR-Catalogue.pdf"
               download="CR Catalogue.pdf"
               className="group/btn flex w-full items-center justify-center gap-2 rounded-lg bg-brand px-4 py-3 font-sans text-xs font-semibold text-white shadow-lg transition-all duration-300 sm:px-6 sm:text-sm hover:bg-brand/90 hover:shadow-xl active:scale-95"
             >
@@ -56,7 +56,7 @@ export function CatalogSection() {
 
             {/* PDF Viewer */}
             <iframe
-              src="/documents/CR Catalogue.pdf#toolbar=0&navpanes=0&view=FitH"
+              src="/documents/CR-Catalogue.pdf#toolbar=0&navpanes=0&view=FitH"
               className="h-full w-full rounded-lg"
               style={{ border: 'none' }}
               title="Product Catalogue Preview"
